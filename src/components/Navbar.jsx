@@ -1,41 +1,46 @@
 import { useEffect, useState } from 'react'
-import { Search, Heart, User, ShoppingCart, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import BrandLogos from './BrandLogos'
 import './Navbar.css'
 
 const NAV_LINKS = [
   { href: '#home', label: 'Home', id: 'home' },
-  { href: '#shop', label: 'Products', id: 'shop' },
   { href: '#about', label: 'About', id: 'about' },
+  { href: '#shop', label: 'Products', id: 'shop' },
   { href: '#brands', label: 'Brands', id: 'brands' },
   { href: '#luxuria', label: 'Luxuria', id: 'luxuria' },
+  { href: '#history', label: 'History', id: 'history' },
+  { href: '#video', label: 'Video', id: 'video' },
   { href: '#contact', label: 'Contact', id: 'contact' },
 ]
 
-export default function Navbar() {
+const SECTION_IDS = NAV_LINKS.filter(
+  (link) => link.id !== 'history' && link.id !== 'video',
+).map((link) => link.id)
+
+export default function Navbar({ onOpenHistory, onOpenVideos }) {
   const [active, setActive] = useState('home')
-  const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(
+    () => typeof window !== 'undefined' && window.scrollY > 40,
+  )
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
-    onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   useEffect(() => {
-    const ids = NAV_LINKS.map((l) => l.id)
-    const elements = ids
-      .map((id) => document.getElementById(id))
-      .filter(Boolean)
-
+    const elements = SECTION_IDS.map((id) => document.getElementById(id)).filter(
+      Boolean,
+    )
     if (!elements.length) return undefined
 
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries
-          .filter((e) => e.isIntersecting)
+          .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
 
         if (visible[0]?.target?.id) {
@@ -61,11 +66,27 @@ export default function Navbar() {
 
   const goTo = (event, id) => {
     event.preventDefault()
+
+    if (id === 'history') {
+      onOpenHistory?.()
+      setActive('history')
+      setOpen(false)
+      window.history.replaceState(null, '', '#history')
+      return
+    }
+
+    if (id === 'video') {
+      onOpenVideos?.()
+      setActive('video')
+      setOpen(false)
+      window.history.replaceState(null, '', '#video')
+      return
+    }
+
     const el = document.getElementById(id)
     if (!el) return
 
-    const offset = 88
-    const top = el.getBoundingClientRect().top + window.scrollY - offset
+    const top = el.getBoundingClientRect().top + window.scrollY - 88
     window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' })
     setActive(id)
     setOpen(false)
@@ -98,25 +119,12 @@ export default function Navbar() {
         </nav>
 
         <div className="navbar__actions">
-          <button type="button" aria-label="Search">
-            <Search size={18} strokeWidth={1.6} />
-          </button>
-          <button type="button" aria-label="Favorites">
-            <Heart size={18} strokeWidth={1.6} />
-          </button>
-          <button type="button" aria-label="Account">
-            <User size={18} strokeWidth={1.6} />
-          </button>
-          <button type="button" className="navbar__cart" aria-label="Cart, 0 items">
-            <ShoppingCart size={18} strokeWidth={1.6} />
-            <span className="navbar__badge">0</span>
-          </button>
           <button
             type="button"
             className="navbar__toggle"
             aria-label={open ? 'Close menu' : 'Open menu'}
             aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
+            onClick={() => setOpen((value) => !value)}
           >
             {open ? <X size={20} strokeWidth={1.6} /> : <Menu size={20} strokeWidth={1.6} />}
           </button>

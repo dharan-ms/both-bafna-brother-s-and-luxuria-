@@ -3,14 +3,14 @@ import BrandLogos from './BrandLogos'
 import SocialLinks from './SocialLinks'
 import './Footer.css'
 
-export default function Footer() {
+export default function Footer({ onOpenHistory, onOpenVideos }) {
   return (
     <footer className="footer" id="contact">
       <div className="footer__inner container">
         <div className="footer__brand">
-          <div className="footer__logos">
+          <a href="#home" className="footer__logos" aria-label="Bafna Brothers home">
             <BrandLogos />
-          </div>
+          </a>
           <p className="footer__tagline">
             A legacy of excellence since 1979 — finest Grade A saffron, edible
             gold &amp; vegetarian silver leaf.
@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="footer__col">
           <h4>Products</h4>
           <ul>
-            <li><a href="#shop">Trusted by Mothers</a></li>
+            <li><a href="#shop">Bafna Saffron</a></li>
             <li><a href="#shop">Luxuria Signature Gift Set</a></li>
             <li><a href="#shop">Shahi Kesariya Syrup</a></li>
             <li><a href="#shop">Genuine Garden Premium</a></li>
@@ -32,6 +32,30 @@ export default function Footer() {
           <h4>Company</h4>
           <ul>
             <li><a href="#about">About Us</a></li>
+            <li>
+              <a
+                href="#history"
+                onClick={(e) => {
+                  e.preventDefault()
+                  onOpenHistory?.()
+                  window.history.replaceState(null, '', '#history')
+                }}
+              >
+                History
+              </a>
+            </li>
+            <li>
+              <a
+                href="#video"
+                onClick={(e) => {
+                  e.preventDefault()
+                  onOpenVideos?.()
+                  window.history.replaceState(null, '', '#video')
+                }}
+              >
+                Video
+              </a>
+            </li>
             <li><a href="#founder">Our Founder</a></li>
             <li><a href="#luxuria">Luxuria Signature</a></li>
             <li><a href="#brands">Trusted Brands</a></li>

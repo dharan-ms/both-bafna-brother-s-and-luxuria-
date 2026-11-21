@@ -1,0 +1,4 @@
+{
+  "summary": "Increased brand logo size across navbar (~78px), footer (~84px), and founder (~110px), with matching responsive sizes.",
+  "current_status": "Logo is larger sitewide; user can refresh to confirm sizing."
+}

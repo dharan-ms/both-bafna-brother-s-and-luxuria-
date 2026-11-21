@@ -1,0 +1,4 @@
+{
+  "summary": "Removed the white/pattern background from the brand logo (transparent PNG), enlarged it in navbar/footer/founder, and dropped the white CSS background so it sits cleanly on dark sections.",
+  "current_status": "Logo is transparent and slightly larger across the site."
+}

@@ -18,7 +18,7 @@ export default function Newsletter() {
         <div className="newsletter__visual">
           <video
             className="newsletter__video"
-            src="/newsletter.mp4"
+            src="/videos/saffron.mp4"
             controls
             playsInline
             preload="metadata"

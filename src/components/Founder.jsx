@@ -1,4 +1,4 @@
-import { BafnaBrothersLogo, LuxuriaLogo } from './BrandLogos'
+import BrandLogos from './BrandLogos'
 import SocialLinks from './SocialLinks'
 import './Founder.css'
 
@@ -27,12 +27,8 @@ export default function Founder() {
           </p>
 
           <div className="founder__marks">
-            <BafnaBrothersLogo />
-            <span className="founder__marks-line" aria-hidden="true" />
-            <div className="founder__lux-wrap">
-              <LuxuriaLogo />
-              <p className="founder__gifts">Wedding, Festive &amp; Corporate Gifts</p>
-            </div>
+            <BrandLogos size="lg" />
+            <p className="founder__gifts">Wedding, Festive &amp; Corporate Gifts</p>
           </div>
 
           <div className="founder__meta">

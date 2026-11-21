@@ -7,7 +7,10 @@ export default function About() {
         <div className="about__copy">
           <p className="section-eyebrow">About Us</p>
           <h2 className="section-title about__title">
-            Bafna Brothers Kesarwala: A Legacy of Excellence Since 1979
+            <span className="about__title-line">Bafna Brothers Kesarwala:</span>
+            <span className="about__title-line">
+              A Legacy of Excellence Since 1979
+            </span>
           </h2>
           <p className="about__text">
             For over four decades, Bafna Brothers Kesarwala has been synonymous
@@ -26,7 +29,7 @@ export default function About() {
           <div className="about__video-frame">
             <video
               className="about__video"
-              src="/about.mp4"
+              src="/about.mp4?v=2"
               controls
               playsInline
               preload="metadata"

@@ -1,0 +1,4 @@
+{
+  "summary": "History is no longer on the page scroll; it opens only as a modal when History is clicked in the navbar or footer, with close via X, backdrop, or Escape.",
+  "current_status": "History click-to-open modal works; section removed from main page flow."
+}

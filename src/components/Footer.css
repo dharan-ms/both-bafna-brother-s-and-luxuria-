@@ -15,9 +15,9 @@
   margin-bottom: 1rem;
 }
 
-.footer__logos .brand-logos {
-  --logo-h: 52px;
-  flex-wrap: wrap;
+.footer__logos .brand-logos__img {
+  height: 100px;
+  max-width: min(540px, 100%);
 }
 
 .footer__tagline {

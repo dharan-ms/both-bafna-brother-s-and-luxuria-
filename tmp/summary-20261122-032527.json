@@ -1,0 +1,4 @@
+{
+  "summary": "Added a Video modal section (opens on navbar/footer Video click) with five alternating left-right story rows: About Me, Saffron, Perfume, Combodian Oudh, and Luxuria, each with related copy and video player.",
+  "current_status": "Video section is live on click with all five videos and supporting text."
+}

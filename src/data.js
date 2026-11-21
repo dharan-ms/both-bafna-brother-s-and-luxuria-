@@ -1,9 +1,7 @@
 export const products = [
   {
     id: 1,
-    name: 'Trusted by Mothers',
-    tagline: 'Since 1979 · Pure Saffron',
-    desc: 'Used by more than 90,000 pregnant mothers worldwide.',
+    desc: 'Bafna Saffron has been used by more than 90,000 pregnant mother worldwide.',
     image: '/product-1.jpg',
   },
   {

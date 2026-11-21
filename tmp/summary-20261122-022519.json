@@ -1,0 +1,4 @@
+{
+  "summary": "Forced About title into exactly two lines with nowrap spans and a slightly smaller bold title size so \"A Legacy of Excellence Since 1979\" no longer wraps to a third line.",
+  "current_status": "About heading is locked to two lines on desktop and scales down on mobile to stay two lines."
+}

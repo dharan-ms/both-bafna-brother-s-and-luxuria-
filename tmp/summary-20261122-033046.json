@@ -1,0 +1,4 @@
+{
+  "summary": "Cleaned the Bafna site codebase: fixed App hash modal init without setState-in-effect, fixed Videos panelRef cleanup, extracted shared useModalLock, removed non-functional navbar cart/search/account buttons and related CSS, deduped newsletter video to /videos/saffron.mp4, deleted unused newsletter.mp4/favicon.svg and tmp extract junk, and tightened product data empties. npm run lint and npm run build both pass with zero warnings.",
+  "current_status": "Site is cleaned and build/lint-clean: Hero→About→Products→Brands→Luxuria→Founder→Newsletter with History and Video modals working; no remaining oxlint warnings."
+}

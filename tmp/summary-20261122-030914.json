@@ -1,0 +1,4 @@
+{
+  "summary": "Rebuilt History as fully coded website sections (About, Heritage, Product, Gold & Silver, Features & Benefits, Quality) using extracted catalogue images—no page screenshots. Still opens only on History click.",
+  "current_status": "History modal now shows all provided catalogue info as HTML/CSS with real images."
+}

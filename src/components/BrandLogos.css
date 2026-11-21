@@ -1,193 +1,48 @@
 .brand-logos {
-  --logo-h: 56px;
-  display: flex;
-  align-items: center;
-  gap: 0.9rem;
-  flex-shrink: 0;
-  height: var(--logo-h);
-}
-
-.brand-logos__divider {
-  width: 1px;
-  height: 40px;
-  background: rgba(194, 155, 64, 0.5);
-  flex-shrink: 0;
-  align-self: center;
-}
-
-/* Shared logo slot — same box for both marks */
-.brand-bafna,
-.brand-luxuria {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: var(--logo-h);
-  min-width: 0;
-  line-height: 1;
-  text-align: center;
-  color: #d4af5a;
-}
-
-/* —— Bafna Brother's Kesarwala —— */
-.brand-bafna__name {
-  font-family: var(--serif);
-  font-size: 0.92rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  color: #d4af5a;
-  white-space: nowrap;
-}
-
-.brand-bafna__name sup {
-  font-size: 0.42em;
-  vertical-align: super;
-}
-
-.brand-bafna__kesar {
-  font-family: var(--serif);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  color: #d4af5a;
-  margin-top: 0.18rem;
-}
-
-.brand-bafna__since {
-  font-family: var(--serif);
-  font-size: 0.52rem;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  color: rgba(249, 245, 242, 0.8);
-  margin-top: 0.22rem;
-}
-
-/* —— Bafna's Luxuria Signature —— */
-.brand-luxuria__crown {
-  width: 22px;
-  height: 13px;
-  margin-bottom: 0.08rem;
-  display: block;
-  flex-shrink: 0;
-}
-
-.brand-luxuria__bafnas {
   display: inline-flex;
   align-items: center;
-  gap: 0.28rem;
-  font-size: 0.42rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  color: #d4af5a;
+  flex-shrink: 0;
+  line-height: 0;
 }
 
-.brand-luxuria__bafnas i {
-  width: 10px;
-  height: 1px;
-  background: #d4af5a;
+.brand-logos__img {
   display: block;
+  width: auto;
+  height: 96px;
+  max-width: min(520px, 58vw);
+  object-fit: contain;
+  object-position: left center;
+  background: transparent;
 }
 
-.brand-luxuria__name {
-  font-family: var(--serif);
-  font-size: 0.92rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  background: linear-gradient(180deg, #f0d78c 0%, #c29b40 55%, #8a6a1f 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  margin-top: 0.06rem;
-  white-space: nowrap;
+.brand-logos--default .brand-logos__img {
+  height: 96px;
 }
 
-.brand-luxuria__name sup {
-  font-size: 0.32em;
-  letter-spacing: 0;
-  -webkit-text-fill-color: #d4af5a;
-  color: #d4af5a;
+.brand-logos--lg .brand-logos__img {
+  height: 130px;
+  max-width: min(680px, 96%);
 }
 
-.brand-luxuria__sig-row {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.28rem;
-  margin-top: 0.02rem;
-}
-
-.brand-luxuria__sig-row i {
-  width: 10px;
-  height: 1px;
-  background: #d4af5a;
-  display: block;
-}
-
-.brand-luxuria__sig {
-  font-family: 'Great Vibes', cursive;
-  font-size: 0.92rem;
-  color: #d4af5a;
-  line-height: 1;
+.brand-logos--sm .brand-logos__img {
+  height: 72px;
+  max-width: min(380px, 65vw);
 }
 
 @media (max-width: 1100px) {
-  .brand-logos {
-    --logo-h: 50px;
-    gap: 0.7rem;
-  }
-
-  .brand-bafna__name,
-  .brand-luxuria__name {
-    font-size: 0.8rem;
-  }
-
-  .brand-bafna__kesar {
-    font-size: 0.68rem;
-  }
-
-  .brand-luxuria__sig {
-    font-size: 0.8rem;
-  }
-
-  .brand-luxuria__crown {
-    width: 18px;
-    height: 11px;
+  .brand-logos--default .brand-logos__img {
+    height: 82px;
+    max-width: min(440px, 54vw);
   }
 }
 
 @media (max-width: 720px) {
-  .brand-logos {
-    --logo-h: 44px;
-    gap: 0.5rem;
+  .brand-logos--default .brand-logos__img {
+    height: 64px;
+    max-width: min(320px, 70vw);
   }
 
-  .brand-logos__divider {
-    height: 32px;
-  }
-
-  .brand-bafna__name,
-  .brand-luxuria__name {
-    font-size: 0.68rem;
-  }
-
-  .brand-bafna__kesar {
-    font-size: 0.58rem;
-  }
-
-  .brand-bafna__since {
-    font-size: 0.42rem;
-    margin-top: 0.12rem;
-  }
-
-  .brand-luxuria__sig {
-    font-size: 0.7rem;
-  }
-
-  .brand-luxuria__crown {
-    width: 16px;
-    height: 10px;
-  }
-
-  .brand-luxuria__bafnas {
-    font-size: 0.36rem;
+  .brand-logos--lg .brand-logos__img {
+    height: 96px;
   }
 }

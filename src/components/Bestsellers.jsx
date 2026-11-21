@@ -6,8 +6,7 @@ export default function Bestsellers() {
     <section className="bestsellers" id="shop">
       <div className="bestsellers__inner container">
         <header className="bestsellers__header">
-          <p className="bestsellers__eyebrow">Our Products</p>
-          <h2 className="bestsellers__title">Signature Selection</h2>
+          <h2 className="bestsellers__eyebrow">Our Products</h2>
           <p className="bestsellers__intro">
             From Kashmiri Mongra saffron to Shahi Kesariya syrup — pure,
             precious, and crafted with care since 1979.
@@ -20,13 +19,17 @@ export default function Bestsellers() {
               <div className="bestsellers__image-wrap">
                 <img
                   src={product.image}
-                  alt={product.name}
+                  alt={product.name || product.desc}
                   className="bestsellers__image"
                   loading="lazy"
                 />
               </div>
-              <p className="bestsellers__tagline">{product.tagline}</p>
-              <h3 className="bestsellers__name">{product.name}</h3>
+              {product.tagline ? (
+                <p className="bestsellers__tagline">{product.tagline}</p>
+              ) : null}
+              {product.name ? (
+                <h3 className="bestsellers__name">{product.name}</h3>
+              ) : null}
               <p className="bestsellers__desc">{product.desc}</p>
             </article>
           ))}

@@ -1,0 +1,4 @@
+{
+  "summary": "History no longer appears in page scroll; clicking History in navbar/footer opens a modal with the exact catalogue page, closable via X, backdrop, or Escape.",
+  "current_status": "Click-to-open History modal is live."
+}

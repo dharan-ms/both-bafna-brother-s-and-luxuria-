@@ -1,0 +1,4 @@
+{
+  "summary": "Added a History section from the Bafna Brothers catalogue PDF (exact page with 45 Years of Heritage & Trust, icons, and saffron image), wired into App after About, plus History links in navbar and footer.",
+  "current_status": "History nav item and section live; catalogue history page shown exactly as in the PDF."
+}

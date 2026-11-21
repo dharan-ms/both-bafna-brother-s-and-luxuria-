@@ -18,7 +18,7 @@ export default function Hero() {
       </div>
 
       <div className="hero__content">
-        <p className="hero__eyebrow">Since 1979 · Grade A Saffron</p>
+        <p className="hero__eyebrow">Since 1979 · Trusted by Generations</p>
         <h1 className="hero__title">
           A Precious Gift
           <br />

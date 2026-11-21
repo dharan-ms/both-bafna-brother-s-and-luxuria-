@@ -21,13 +21,6 @@
   margin-bottom: 0.65rem;
 }
 
-.bestsellers__title {
-  font-family: var(--serif);
-  font-size: clamp(2.2rem, 3.5vw, 3.1rem);
-  font-weight: 500;
-  color: var(--cream);
-}
-
 .bestsellers__intro {
   max-width: 520px;
   margin: 0.9rem auto 0;
@@ -81,7 +74,7 @@
 
 .bestsellers__tagline {
   font-size: 0.62rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--gold-light);
@@ -90,19 +83,19 @@
 
 .bestsellers__name {
   font-family: var(--serif);
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
-  font-weight: 500;
-  color: var(--cream);
+  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+  font-weight: 700;
+  color: #fff;
   line-height: 1.25;
   margin-bottom: 0.45rem;
 }
 
 .bestsellers__desc {
-  font-size: 0.78rem;
-  font-weight: 300;
+  font-size: 0.82rem;
+  font-weight: 500;
   line-height: 1.55;
-  color: rgba(249, 245, 242, 0.62);
-  max-width: 22ch;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 28ch;
   margin-inline: auto;
 }
 

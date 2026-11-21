@@ -1,0 +1,4 @@
+{
+  "summary": "Explained the empty History popup was a broken layout; rebuilt it as a clear vertical catalogue viewer with text + full page images for all 11 PDF pages.",
+  "current_status": "History modal now shows the full catalogue content clearly on click."
+}
