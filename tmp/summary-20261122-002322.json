@@ -1,0 +1,4 @@
+{
+  "summary": "Removed the Making Moments Grand / Recipes section and replaced it with a Brands that have trusted us section. All ~50 partner brands are rendered in code as typographic logo cards in a responsive grid (not a static image), with distinct styles per brand and nav updated to Brands.",
+  "current_status": "Trusted brands section is live in code; logo, About video, and product images remain in place. Ready for the next content/image step from the user."
+}

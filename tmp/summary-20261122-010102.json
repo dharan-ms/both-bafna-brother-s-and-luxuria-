@@ -1,0 +1,4 @@
+{
+  "summary": "Removed the BB circular logo image from the first-page navbar and replaced it with two coded logos side by side: Bafna Brother's Kesarwala Since 1979 and Bafna's Luxuria Signature (crown + typography in HTML/CSS/SVG).",
+  "current_status": "Navbar now shows both brand marks in pure code on the hero/first page; old logo.png mark no longer used in the header."
+}

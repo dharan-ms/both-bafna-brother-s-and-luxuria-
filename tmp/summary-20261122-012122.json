@@ -1,0 +1,4 @@
+{
+  "summary": "Reduced oversized Luxuria collection images (shorter 16:11 ratio, max-height 320px) and capped Bestsellers product image height so cards fit a normal website viewport.",
+  "current_status": "Product/Luxuria images are sized for web; Luxuria cards no longer fill the full screen height."
+}

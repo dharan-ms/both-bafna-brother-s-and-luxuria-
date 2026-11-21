@@ -1,0 +1,127 @@
+export const luxuriaCollections = [
+  {
+    id: 'saffron',
+    title: '100% Pure Saffron',
+    lead: 'Luxuria Signature saffron boasts unparalleled quality — rich crimson hue, potent aroma, meticulously sourced and handpicked.',
+    items: [
+      'Kashmiri Saffron',
+      'Kashmiri Tukdi',
+      'Natural Saffron Extract Drops',
+      'Spanish Saffron',
+      'Spanish Saffron Powder',
+      'Spanish Saffron Lachha',
+    ],
+    image: '/product-4.jpg',
+  },
+  {
+    id: 'syrups',
+    title: 'Luxury Syrups',
+    lead: 'Infused with quality gold / silver flakes & saffron strands — refined taste for gourmet dishes and premium beverages.',
+    items: [
+      'Shahi Kesariya Syrup',
+      'Shahi Kesariya Thandai Syrup',
+      'Turkish Coffee Syrup',
+      'Arabian Dates with Moroccan Coffee Syrup',
+      'Persian Rose Syrups',
+      'Mogra · Rabdi Badam · Sandalwood',
+    ],
+    note: 'Bottles: 100 ml, 250 ml, 500 ml, 800 ml, 1 Ltr',
+    image: '/product-3.jpg',
+  },
+  {
+    id: 'kahwa',
+    title: 'Kashmiri Kahwa Tea',
+    lead: 'Instant mix made with 100% pure saffron & Indian spices — a herbal remedy full of antioxidants that supports metabolism.',
+    items: [
+      'Saffron, Cardamom & Cinnamon',
+      'Clove, Almonds & Rose Petals',
+      'Green Tea & Herbs',
+      'No harmful preservatives',
+      'No artificial flavours',
+    ],
+    note: 'From our root to your wellness',
+    image: '/luxuria/kahwa-tea.jpg',
+  },
+  {
+    id: 'incense',
+    title: 'Premium Incense Sticks',
+    lead: 'Scents that bring you back to yourself — every fragrance meticulously crafted with natural essential oils.',
+    items: [
+      'Oud Combodi Premium Incense',
+      'Amber Oudh',
+      'Kesar Kasturi',
+      'Kesar Chandan',
+      'Gold Coin & Floral Blends',
+    ],
+    note: 'Fragrance that complements every occasion',
+    image: '/luxuria/incense-oud.jpg',
+  },
+  {
+    id: 'perfume',
+    title: 'Kesar Chandan Oud',
+    lead: 'A luxurious, long-lasting fragrance — saffron, sandalwood and oud in a signature 100 ml perfume.',
+    items: [
+      'Saffron (Kesar)',
+      'Sandalwood (Chandan)',
+      'Oud',
+      '100 ml luxury bottle',
+      'Bespoke & attar collections available',
+    ],
+    image: '/luxuria/kesar-chandan-oud.jpg',
+  },
+  {
+    id: 'skincare',
+    title: 'Everyday Wellness & Soaps',
+    lead: 'Elevate your ritual with saffron, 24k gold and silver — handcrafted skincare and the Maharaja Collection.',
+    items: [
+      'Aqua Fresh Premium Shower Gel',
+      '24k Gold & Saffron Body Scrub',
+      '24k Gold Handcrafted Soap',
+      '999.9 Silver Handcrafted Soap',
+      'Pure Saffron · Rose Oudh · Mogra · Sandalwood',
+    ],
+    image: '/luxuria/skincare.jpg',
+  },
+  {
+    id: 'wellness',
+    title: 'Kesariya Jivan Chyawanprash',
+    lead: 'Royal Chyawanprash crafted with Ayurvedic wisdom, premium saffron, and a touch of luxury for body, mind and soul.',
+    items: [
+      'Kesariya Jivan Royal Chyawanprash',
+      'Signature Kesari Gulkand',
+      '24k Gold Shilajit with Ashwagandha',
+      'Special / Sugar-Free options',
+      'Boosts immunity & stamina',
+    ],
+    image: '/luxuria/chyawanprash.jpg',
+  },
+  {
+    id: 'hampers',
+    title: 'Personalized Gift Hampers',
+    lead: 'Gift like never before — curated festive, wedding and corporate hampers with honey, oils, and Luxuria Signature favourites.',
+    items: [
+      'Festive Gifts',
+      'Wedding Gifts',
+      'Corporate Gifts',
+      'Custom product selection',
+      'Elegant luxury packaging',
+    ],
+    note: 'Pan India & international shipping',
+    image: '/luxuria/gift-hamper.jpg',
+  },
+]
+
+export const luxuriaHighlights = [
+  {
+    title: 'Festive Gifts',
+    text: 'Curated hampers for celebrations and festivals.',
+  },
+  {
+    title: 'Wedding Gifts',
+    text: 'Opulent presents for weddings and mehendi.',
+  },
+  {
+    title: 'Corporate Gifts',
+    text: 'Premium assortments for discerning clients.',
+  },
+]

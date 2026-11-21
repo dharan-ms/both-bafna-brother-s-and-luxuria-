@@ -1,0 +1,4 @@
+{
+  "summary": "Fixed uneven Luxuria collection images by giving every block equal 50/50 columns, a consistent 440px media frame, absolute cover cropping, and vertically centered text so all photos feel the same size.",
+  "current_status": "Luxuria image frames are now uniform; refresh to verify visual balance across all collection rows."
+}

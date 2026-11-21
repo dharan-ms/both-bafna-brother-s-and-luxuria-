@@ -1,0 +1,4 @@
+{
+  "summary": "Reverted short landscape image crops; Luxuria and Bestsellers images are full-width portrait (3:4) again from top to bottom with object-fit cover and no side gaps, with a slightly narrower collection grid so height stays balanced.",
+  "current_status": "Images fill edge-to-edge and run tall top-to-bottom as before the failed size experiment."
+}

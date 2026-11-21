@@ -1,0 +1,4 @@
+{
+  "summary": "Changed Luxuria collections from uneven side-by-side rows to a clear top-to-bottom layout: each block is image on top, text underneath, stacked vertically with equal portrait image frames.",
+  "current_status": "Luxuria products now display top-to-bottom (image then text). User should refresh to confirm this matches what they meant."
+}

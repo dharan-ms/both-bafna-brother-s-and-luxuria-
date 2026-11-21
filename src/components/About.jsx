@@ -1,0 +1,39 @@
+import './About.css'
+
+export default function About() {
+  return (
+    <section className="about" id="about">
+      <div className="about__inner container">
+        <div className="about__copy">
+          <p className="section-eyebrow">About Us</p>
+          <h2 className="section-title about__title">
+            Bafna Brothers Kesarwala: A Legacy of Excellence Since 1979
+          </h2>
+          <p className="about__text">
+            For over four decades, Bafna Brothers Kesarwala has been synonymous
+            with unparalleled quality and tradition. Established in 1979, we have
+            dedicated ourselves to delivering the finest saffron to our discerning
+            customers. Our journey began with a passion for purity and a
+            commitment to excellence, which continues to be the cornerstone of
+            our business.
+          </p>
+          <a href="#luxuria" className="btn btn--burgundy">
+            Explore Luxuria <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div className="about__media">
+          <div className="about__video-frame">
+            <video
+              className="about__video"
+              src="/about.mp4"
+              controls
+              playsInline
+              preload="metadata"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

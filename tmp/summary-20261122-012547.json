@@ -1,0 +1,4 @@
+{
+  "summary": "Fixed Luxuria and Bestsellers images to full-bleed fill: removed aspect-ratio/max-height conflict that left side gaps, set fixed media heights with object-fit cover edge-to-edge.",
+  "current_status": "Collection and product card images now fill their frames fully with no letterboxing."
+}

@@ -1,0 +1,161 @@
+.founder {
+  background: #050305;
+  padding: 4.5rem 0;
+  color: var(--cream);
+  border-top: 1px solid rgba(194, 155, 64, 0.15);
+}
+
+.founder__inner {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.85fr) 1.15fr;
+  gap: 2.5rem 3rem;
+  align-items: center;
+}
+
+.founder__portrait {
+  display: flex;
+  justify-content: center;
+}
+
+.founder__frame {
+  width: min(100%, 360px);
+  border: 1px solid rgba(249, 245, 242, 0.35);
+  padding: 6px;
+  background: #0a0608;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.founder__frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.founder__eyebrow {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 0.7rem;
+}
+
+.founder__title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.2vw, 2.7rem);
+  font-weight: 500;
+  color: var(--cream);
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+}
+
+.founder__role {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--gold-light);
+  margin-bottom: 1.15rem;
+}
+
+.founder__text {
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: rgba(249, 245, 242, 0.7);
+  max-width: 48ch;
+  margin-bottom: 1.75rem;
+}
+
+.founder__marks {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid rgba(194, 155, 64, 0.2);
+  border-bottom: 1px solid rgba(194, 155, 64, 0.2);
+}
+
+.founder__marks-line {
+  width: 1px;
+  height: 48px;
+  background: rgba(194, 155, 64, 0.45);
+}
+
+.founder__lux-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.founder__gifts {
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(249, 245, 242, 0.65);
+  border: 1px solid rgba(249, 245, 242, 0.28);
+  padding: 0.3rem 0.55rem;
+}
+
+/* Brand logos inside founder use cream/gold on black — reinforce contrast */
+.founder .brand-bafna__since {
+  color: rgba(249, 245, 242, 0.75);
+}
+
+.founder__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.founder__social .social-links__label {
+  color: rgba(249, 245, 242, 0.55);
+}
+
+.founder__care {
+  font-size: 0.85rem;
+  color: rgba(249, 245, 242, 0.78);
+}
+
+.founder__care a {
+  color: var(--gold-light);
+  transition: color 0.2s ease;
+}
+
+.founder__care a:hover {
+  color: var(--cream);
+}
+
+.founder__web {
+  font-size: 0.85rem;
+  color: var(--gold-light);
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
+}
+
+.founder__web:hover {
+  color: var(--cream);
+}
+
+@media (max-width: 860px) {
+  .founder__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .founder__text {
+    margin-inline: auto;
+  }
+
+  .founder__marks {
+    justify-content: center;
+  }
+
+  .founder__meta {
+    align-items: center;
+  }
+}

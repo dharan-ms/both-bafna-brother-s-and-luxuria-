@@ -1,0 +1,4 @@
+{
+  "summary": "Fixed both CSS Problems panel issues: added -webkit-backdrop-filter before backdrop-filter in Luxuria.css and reordered the same prefixes correctly in Navbar.css for Safari compatibility.",
+  "current_status": "Safari backdrop-filter warnings resolved; site CSS prefixes are in the correct order."
+}

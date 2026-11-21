@@ -1,0 +1,343 @@
+.luxuria {
+  background:
+    radial-gradient(ellipse at 50% 0%, #5c1528 0%, transparent 50%),
+    linear-gradient(180deg, #2a0a14 0%, #1a050c 40%, #120408 100%);
+  color: var(--cream);
+}
+
+.luxuria__hero {
+  position: relative;
+  padding: 4.5rem 1.25rem 3.5rem;
+  text-align: center;
+  overflow: hidden;
+  background: transparent;
+  border-bottom: 1px solid rgba(194, 155, 64, 0.18);
+}
+
+.luxuria__pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background-image:
+    radial-gradient(circle at center, transparent 28%, #c29b40 29%, #c29b40 31%, transparent 32%),
+    radial-gradient(circle at center, transparent 48%, rgba(249, 245, 242, 0.25) 49%, transparent 51%);
+  background-size: 160px 160px, 160px 160px;
+  background-position: 0 0, 80px 80px;
+  pointer-events: none;
+}
+
+.luxuria__brand {
+  position: relative;
+  z-index: 1;
+  max-width: 640px;
+  margin: 0 auto 2.25rem;
+}
+
+.luxuria__crown {
+  width: min(120px, 28vw);
+  margin: 0 auto 1rem;
+  display: block;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.45));
+}
+
+.luxuria__bafnas {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  color: var(--gold-light);
+  margin-bottom: 0.35rem;
+}
+
+.luxuria__arrow {
+  font-size: 1.1rem;
+  line-height: 1;
+  opacity: 0.85;
+}
+
+.luxuria__name {
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 7vw, 4.6rem);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  background: linear-gradient(180deg, #f0d78c 0%, #c29b40 48%, #8a6a1f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.55rem;
+}
+
+.luxuria__name sup {
+  font-size: 0.28em;
+  letter-spacing: 0;
+  vertical-align: super;
+  color: var(--gold-light);
+  -webkit-text-fill-color: var(--gold-light);
+}
+
+.luxuria__divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  margin-bottom: 0.35rem;
+}
+
+.luxuria__divider span {
+  width: 56px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c29b40, transparent);
+}
+
+.luxuria__divider i {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #c29b40;
+  transform: rotate(45deg);
+  display: block;
+}
+
+.luxuria__signature {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  color: var(--gold-light);
+  line-height: 1.1;
+}
+
+.luxuria__info {
+  position: relative;
+  z-index: 1;
+  width: min(520px, 92%);
+  margin: 0 auto;
+  padding: 1.15rem 1.25rem 1.25rem;
+  border: 1.5px solid rgba(194, 155, 64, 0.7);
+  background: rgba(18, 4, 8, 0.55);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.luxuria__locations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  margin-bottom: 0.7rem;
+}
+
+.luxuria__locations strong {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--cream);
+}
+
+.luxuria__rule {
+  flex: 1;
+  max-width: 72px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.luxuria__gifts {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(249, 245, 242, 0.88);
+  margin-bottom: 0.45rem;
+}
+
+.luxuria__division {
+  font-size: 0.78rem;
+  color: rgba(249, 245, 242, 0.55);
+}
+
+.luxuria__intro {
+  padding: 3.5rem 0 1rem;
+  text-align: center;
+}
+
+.luxuria__eyebrow {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 0.7rem;
+}
+
+.luxuria__intro-title {
+  font-family: var(--serif);
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  color: var(--cream);
+  font-weight: 500;
+  margin-bottom: 0.9rem;
+}
+
+.luxuria__intro-text {
+  max-width: 640px;
+  margin: 0 auto 2rem;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: rgba(249, 245, 242, 0.7);
+}
+
+.luxuria__highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.luxuria__highlight {
+  padding: 1.15rem 1rem;
+  background: rgba(249, 245, 242, 0.05);
+  border: 1px solid rgba(194, 155, 64, 0.28);
+}
+
+.luxuria__highlight h4 {
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  color: var(--cream);
+  margin-bottom: 0.35rem;
+}
+
+.luxuria__highlight p {
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: rgba(249, 245, 242, 0.6);
+}
+
+.luxuria__collections {
+  padding: 2rem 0 4.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 1.25rem;
+  align-items: stretch;
+  width: min(920px, 100%);
+  margin-inline: auto;
+}
+
+.luxuria__collection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: rgba(249, 245, 242, 0.05);
+  border: 1px solid rgba(194, 155, 64, 0.25);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.luxuria__collection-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: #0d0408;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.luxuria__collection-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.luxuria__collection-copy {
+  box-sizing: border-box;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.25rem 1.35rem;
+  background: rgba(18, 4, 8, 0.45);
+}
+
+.luxuria__collection-copy .luxuria__eyebrow {
+  margin-bottom: 0.4rem;
+}
+
+.luxuria__collection-copy h3 {
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 1.8vw, 1.55rem);
+  color: var(--cream);
+  margin-bottom: 0.45rem;
+  line-height: 1.2;
+}
+
+.luxuria__collection-lead {
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: rgba(249, 245, 242, 0.68);
+  margin-bottom: 0.7rem;
+}
+
+.luxuria__collection-copy ul {
+  list-style: none;
+  display: grid;
+  gap: 0.28rem;
+  margin-bottom: 0.5rem;
+}
+
+.luxuria__collection-copy li {
+  position: relative;
+  padding-left: 0.9rem;
+  font-size: 0.74rem;
+  line-height: 1.35;
+  color: rgba(249, 245, 242, 0.82);
+}
+
+.luxuria__collection-copy li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.luxuria__note {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--gold-light);
+  margin-top: auto;
+  padding-top: 0.4rem;
+}
+
+@media (max-width: 860px) {
+  .luxuria__highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .luxuria__collections {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .luxuria__collections {
+    gap: 1.75rem 1.5rem;
+    max-width: 980px;
+  }
+
+  .luxuria__collection-copy {
+    padding: 1.35rem 1.45rem 1.5rem;
+  }
+
+  .luxuria__collection-copy h3 {
+    font-size: 1.65rem;
+  }
+}

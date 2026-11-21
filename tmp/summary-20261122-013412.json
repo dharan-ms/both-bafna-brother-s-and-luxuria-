@@ -1,0 +1,4 @@
+{
+  "summary": "Cleaned the codebase: removed unused Origins/Recipes/WhyZafranik components, dead data (origins/recipes/whyItems/brands.js), and unused assets; simplified Bestsellers to a plain grid; unified About section id; unique SVG gradient IDs; lint and build pass with no issues.",
+  "current_status": "Codebase is cleaned and building cleanly; only active sections remain in App."
+}

@@ -1,0 +1,125 @@
+.footer {
+  background: #10060a;
+  color: rgba(249, 245, 242, 0.78);
+  padding-top: 3.75rem;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.35fr repeat(2, 0.85fr) 1fr 1.15fr;
+  gap: 2rem 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.footer__logos {
+  margin-bottom: 1rem;
+}
+
+.footer__logos .brand-logos {
+  --logo-h: 52px;
+  flex-wrap: wrap;
+}
+
+.footer__tagline {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  max-width: 280px;
+  color: rgba(249, 245, 242, 0.55);
+  margin-bottom: 1.15rem;
+}
+
+.footer__social {
+  margin-top: 0.25rem;
+}
+
+.footer__col h4,
+.footer__map h4 {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--cream);
+  margin-bottom: 1rem;
+}
+
+.footer__col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.footer__col a {
+  font-size: 0.8rem;
+  color: rgba(249, 245, 242, 0.55);
+  transition: color 0.2s ease;
+}
+
+.footer__col a:hover {
+  color: var(--gold-light);
+}
+
+.footer__phones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer__person {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: rgba(249, 245, 242, 0.85);
+  margin-bottom: 0.15rem;
+}
+
+.footer__map {
+  color: rgba(249, 245, 242, 0.55);
+}
+
+.footer__address {
+  font-style: normal;
+  font-size: 0.8rem;
+  line-height: 1.65;
+  margin-bottom: 0.75rem;
+}
+
+.footer__tel {
+  font-size: 0.78rem;
+  color: var(--gold-muted);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(249, 245, 242, 0.08);
+  padding: 1.15rem 0;
+}
+
+.footer__bottom-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+  font-size: 0.75rem;
+  color: rgba(249, 245, 242, 0.4);
+}
+
+.footer__since {
+  color: var(--gold-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+}
+
+@media (max-width: 1100px) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 520px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+}

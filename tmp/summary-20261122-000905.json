@@ -1,0 +1,4 @@
+{
+  "summary": "Replaced the second section with an About Us block: catalogue legacy copy on the left and the provided WhatsApp video on the right in a fixed 16:9 frame (object-fit cover). Compressed the video from ~96MB to ~31MB for web, saved as public/about.mp4, and wired it into App.",
+  "current_status": "About Us section with real copy and fitted video is live as the second page section; logo and brand copy already in place; awaiting further image/content steps."
+}

@@ -1,0 +1,4 @@
+{
+  "summary": "Hard-fixed Luxuria collection rows to a uniform height (400–420px) with equal 50/50 columns so image and text panels always match; images use absolute cover crop and text is clamped so rows no longer look uneven.",
+  "current_status": "Luxuria image/text blocks should now appear consistently sized; user should hard-refresh to verify the layout."
+}
