@@ -52,14 +52,31 @@ export default function Luxuria() {
               <img src={collection.image} alt={collection.title} loading="lazy" />
             </div>
             <div className="luxuria__collection-copy">
-              <p className="luxuria__eyebrow">Luxuria Signature</p>
+              {collection.eyebrow !== null ? (
+                <p className="luxuria__eyebrow">
+                  {collection.eyebrow || 'Luxuria Signature'}
+                </p>
+              ) : null}
               <h3>{collection.title}</h3>
-              <p className="luxuria__collection-lead">{collection.lead}</p>
-              <ul>
-                {collection.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+              {collection.tagline ? (
+                <p className="luxuria__collection-tagline">{collection.tagline}</p>
+              ) : null}
+              {collection.subtitle ? (
+                <p className="luxuria__collection-subtitle">{collection.subtitle}</p>
+              ) : null}
+              {collection.lead ? (
+                <p className="luxuria__collection-lead">{collection.lead}</p>
+              ) : null}
+              {collection.items?.length ? (
+                <ul>
+                  {collection.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              ) : null}
+              {collection.ingredients ? (
+                <p className="luxuria__ingredients">{collection.ingredients}</p>
+              ) : null}
               {collection.note ? (
                 <p className="luxuria__note">{collection.note}</p>
               ) : null}

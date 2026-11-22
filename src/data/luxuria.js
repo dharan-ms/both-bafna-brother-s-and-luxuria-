@@ -1,16 +1,10 @@
 export const luxuriaCollections = [
   {
     id: 'saffron',
-    title: '100% Pure Saffron',
-    lead: 'Luxuria Signature saffron boasts unparalleled quality — rich crimson hue, potent aroma, meticulously sourced and handpicked.',
-    items: [
-      'Kashmiri Saffron',
-      'Kashmiri Tukdi',
-      'Natural Saffron Extract Drops',
-      'Spanish Saffron',
-      'Spanish Saffron Powder',
-      'Spanish Saffron Lachha',
-    ],
+    eyebrow: 'Bafna Brothers Kesarwala',
+    title: 'The Gold of Kashmir',
+    lead: 'Purity, Aroma, and Quality in Every Thread.',
+    items: [],
     image: '/product-4.jpg',
   },
   {
@@ -30,16 +24,18 @@ export const luxuriaCollections = [
   },
   {
     id: 'kahwa',
-    title: 'Kashmiri Kahwa Tea',
-    lead: 'Instant mix made with 100% pure saffron & Indian spices — a herbal remedy full of antioxidants that supports metabolism.',
+    eyebrow: null,
+    title: 'Kashmiri Kahwa Tea – Instant Mix',
     items: [
-      'Saffron, Cardamom & Cinnamon',
-      'Clove, Almonds & Rose Petals',
-      'Green Tea & Herbs',
-      'No harmful preservatives',
-      'No artificial flavours',
+      'Made with 100% pure saffron & Indian spices.',
+      'Helps soothe cold & cough.',
+      'Rich in antioxidants.',
+      'Supports metabolism.',
+      'A perfect blend of taste, tradition & wellness.',
     ],
-    note: 'From our root to your wellness',
+    ingredients:
+      'Key Ingredients: Saffron, Cardamom, Cinnamon, Clove, Almonds, Rose Petals, Green Tea & Herbs.',
+    note: 'From Our Roots to Your Wellness!',
     image: '/luxuria/kahwa-tea.jpg',
   },
   {
@@ -58,15 +54,13 @@ export const luxuriaCollections = [
   },
   {
     id: 'perfume',
+    eyebrow: null,
     title: 'Kesar Chandan Oud',
-    lead: 'A luxurious, long-lasting fragrance — saffron, sandalwood and oud in a signature 100 ml perfume.',
-    items: [
-      'Saffron (Kesar)',
-      'Sandalwood (Chandan)',
-      'Oud',
-      '100 ml luxury bottle',
-      'Bespoke & attar collections available',
-    ],
+    tagline: 'Eau De Perfum',
+    subtitle: 'Bespoke Perfumes',
+    lead:
+      'Discover a world of personalized fragrance with our collection of Bespoke Perfumes, featuring over 350 hand-blended options.',
+    items: [],
     image: '/luxuria/kesar-chandan-oud.jpg',
   },
   {
@@ -84,15 +78,18 @@ export const luxuriaCollections = [
   },
   {
     id: 'wellness',
-    title: 'Kesariya Jivan Chyawanprash',
-    lead: 'Royal Chyawanprash crafted with Ayurvedic wisdom, premium saffron, and a touch of luxury for body, mind and soul.',
+    eyebrow: null,
+    title: 'Kesariya Jivan Royal Chyawanprash',
     items: [
-      'Kesariya Jivan Royal Chyawanprash',
-      'Signature Kesari Gulkand',
-      '24k Gold Shilajit with Ashwagandha',
-      'Special / Sugar-Free options',
-      'Boosts immunity & stamina',
+      'Crafted with traditional Ayurvedic wisdom.',
+      'Supports immunity & overall wellness.',
+      'Helps boost strength and vitality.',
+      'Available in Normal & Special variants.',
+      'Special Chyawanprash for enhanced wellness.',
+      'Available in Sugar-Free option.',
+      'Premium packaging – perfect for gifting.',
     ],
+    note: 'Nourish Your Body, Elevate Your Wellness!',
     image: '/luxuria/chyawanprash.jpg',
   },
   {

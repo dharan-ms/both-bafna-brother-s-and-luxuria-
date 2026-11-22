@@ -1,6 +1,7 @@
-import { X } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { historySections } from '../data/history'
 import { useModalLock } from '../hooks/useModalLock'
+import BrandLogos from './BrandLogos'
 import './History.css'
 
 function FlowerIcon() {
@@ -57,88 +58,128 @@ const ICONS = {
   pin: PinIcon,
 }
 
-function SectionCard({ section }) {
+function SectionBlock({ section }) {
   if (section.kind === 'heritage') {
     return (
-      <article className="hcard hcard--heritage">
-        <header className="hcard__heritage-head">
-          <span className="hcard__years">{section.years}</span>
-          <h3>
+      <section className="history-page__section history-page__section--heritage">
+        <div className="history-page__years-row">
+          <span className="history-page__years">{section.years}</span>
+          <h2>
             {section.titleLines.map((line) => (
               <span key={line}>{line}</span>
             ))}
-          </h3>
-        </header>
-        <p className="hcard__text">{section.text}</p>
-        <div className="hcard__points">
+          </h2>
+        </div>
+        <p>{section.text}</p>
+        <div className="history-page__points">
           {section.points.map((point) => {
             const Icon = ICONS[point.icon]
             return (
-              <div key={point.title} className="hcard__point">
-                <div className="hcard__icon"><Icon /></div>
-                <div>
-                  <h4>{point.title}</h4>
-                  <p>{point.text}</p>
-                </div>
+              <div key={point.title} className="history-page__point-wrap">
+                <article className="history-page__point">
+                  <div className="history-page__icon"><Icon /></div>
+                  <div>
+                    <h3>{point.title}</h3>
+                    <p>{point.text}</p>
+                  </div>
+                </article>
+                {point.image ? (
+                  <figure className="history-page__point-figure">
+                    <img
+                      src={point.image}
+                      alt={point.imageAlt || ''}
+                      loading="lazy"
+                    />
+                  </figure>
+                ) : null}
               </div>
             )
           })}
         </div>
-        <img className="hcard__image" src={section.image} alt={section.imageAlt} />
-      </article>
+      </section>
     )
   }
 
   if (section.kind === 'benefits') {
     return (
-      <article className="hcard hcard--benefits">
-        <p className="hcard__lead">{section.lead}</p>
-        <h3 className="hcard__eyebrow">{section.eyebrow}</h3>
-        <ul className="hcard__bullets">
+      <section className="history-page__section">
+        <p className="history-page__lead">{section.lead}</p>
+        <p className="history-page__eyebrow">{section.eyebrow}</p>
+        <ul className="history-page__bullets">
           {section.bullets.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
-        {section.details.map((detail) => (
-          <p key={detail.title} className="hcard__detail">
-            <strong>{detail.title}</strong> {detail.text}
-          </p>
-        ))}
-        <img className="hcard__image" src={section.image} alt={section.imageAlt} />
-      </article>
+        <div className="history-page__details">
+          {section.details.map((detail) => (
+            <article key={detail.title}>
+              <h3>{detail.title}</h3>
+              <p>{detail.text}</p>
+            </article>
+          ))}
+        </div>
+        {section.image ? (
+          <figure className="history-page__figure history-page__figure--wide">
+            <img
+              src={section.image}
+              alt={section.imageAlt || ''}
+              loading="lazy"
+            />
+          </figure>
+        ) : null}
+      </section>
     )
   }
 
   if (section.kind === 'gold-silver') {
     return (
-      <article className="hcard">
-        <h3 className="hcard__eyebrow">{section.eyebrow}</h3>
-        <p className="hcard__lead hcard__lead--center">{section.lead}</p>
-        <p className="hcard__script">{section.accent}</p>
-        <p className="hcard__text">{section.text}</p>
-        <img className="hcard__image" src={section.image} alt={section.imageAlt} />
-      </article>
+      <section className="history-page__section">
+        <p className="history-page__eyebrow">{section.eyebrow}</p>
+        <p className="history-page__lead">{section.lead}</p>
+        {section.accent ? (
+          <p className="history-page__accent">{section.accent}</p>
+        ) : null}
+        <p>{section.text}</p>
+        {section.image ? (
+          <figure className="history-page__figure history-page__figure--wide">
+            <img
+              src={section.image}
+              alt={section.imageAlt || ''}
+              loading="lazy"
+            />
+          </figure>
+        ) : null}
+      </section>
     )
   }
 
   if (section.kind === 'product') {
     return (
-      <article className="hcard">
-        <h3 className="hcard__eyebrow">{section.eyebrow}</h3>
-        <p className="hcard__text hcard__text--center">{section.text}</p>
-        <img className="hcard__image" src={section.image} alt={section.imageAlt} />
-      </article>
+      <section className="history-page__section">
+        <p className="history-page__eyebrow">{section.eyebrow}</p>
+        <p>{section.text}</p>
+      </section>
     )
   }
 
   return (
-    <article className="hcard">
-      <h3 className="hcard__eyebrow">{section.eyebrow}</h3>
-      <h4 className="hcard__title">{section.title}</h4>
-      <p className="hcard__text">{section.text}</p>
-      {section.accent ? <p className="hcard__script">{section.accent}</p> : null}
-      <img className="hcard__image" src={section.image} alt={section.imageAlt} />
-    </article>
+    <section className="history-page__section">
+      <p className="history-page__eyebrow">{section.eyebrow}</p>
+      <h2>{section.title}</h2>
+      <p>{section.text}</p>
+      {section.accent ? (
+        <p className="history-page__accent">{section.accent}</p>
+      ) : null}
+      {section.image ? (
+        <figure className="history-page__figure">
+          <img
+            src={section.image}
+            alt={section.imageAlt || ''}
+            loading="lazy"
+          />
+        </figure>
+      ) : null}
+    </section>
   )
 }
 
@@ -148,43 +189,35 @@ export default function History({ open, onClose }) {
   if (!open) return null
 
   return (
-    <div
-      className="history-modal"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="history-title"
-    >
-      <button
-        type="button"
-        className="history-modal__backdrop"
-        aria-label="Close history"
-        onClick={onClose}
-      />
-
-      <div className="history-modal__panel">
-        <header className="history-modal__top">
-          <div>
-            <p className="history-modal__eyebrow">Bafna Brothers Kesarwala</p>
-            <h2 id="history-title" className="history-modal__title">
-              History
-            </h2>
-          </div>
-          <button
-            type="button"
-            className="history-modal__close"
-            aria-label="Close"
-            onClick={onClose}
-          >
-            <X size={18} strokeWidth={1.8} />
+    <div className="history-page" role="dialog" aria-modal="true" aria-labelledby="history-title">
+      <header className="history-page__nav">
+        <div className="history-page__nav-inner container">
+          <a href="#home" className="history-page__logo" onClick={onClose} aria-label="Bafna Brothers home">
+            <BrandLogos />
+          </a>
+          <button type="button" className="history-page__back" onClick={onClose}>
+            <ArrowLeft size={18} strokeWidth={1.8} />
+            <span>Back</span>
           </button>
-        </header>
+        </div>
+      </header>
 
-        <div className="history-modal__scroll">
+      <main className="history-page__main">
+        <div className="history-page__hero container">
+          <p className="history-page__brand">Bafna Brothers Kesarwala</p>
+          <h1 id="history-title">History</h1>
+          <p className="history-page__intro">
+            Our story since 1979 — purity, tradition, and a house India has trusted
+            for generations.
+          </p>
+        </div>
+
+        <div className="history-page__content container">
           {historySections.map((section) => (
-            <SectionCard key={section.id} section={section} />
+            <SectionBlock key={section.id} section={section} />
           ))}
         </div>
-      </div>
+      </main>
     </div>
   )
 }

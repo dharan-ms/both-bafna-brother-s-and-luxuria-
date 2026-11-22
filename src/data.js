@@ -1,13 +1,14 @@
 export const products = [
   {
     id: 1,
-    desc: 'Bafna Brothers Kesarwala has been used by more than 90,000 pregnant mother worldwide.',
-    image: '/product-1.jpg?v=2',
+    name: 'A pinch of kesar in the morning begins with Pooja Tilak',
+    desc: 'Saffron has held a sacred place in India worship for as long as anyone can remember',
+    image: '/pooja-tilak.jpg',
   },
   {
     id: 2,
-    name: 'Bespoke Perfumes, Attar & Aroma Oils',
-    image: '/product-2.jpg?v=2',
+    desc: 'Bafna Brothers Kesarwala has been used by more than 90,000 pregnant mother worldwide.',
+    image: '/product-1.jpg?v=2',
   },
   {
     id: 3,
@@ -18,10 +19,8 @@ export const products = [
   },
   {
     id: 4,
-    name: 'Genuine Garden Premium Saffron',
-    tagline: 'World Finest Saffron · 1.00 g',
-    desc: "The world's most precious spices — hand-graded, deep-red, and lab-certified pure.",
-    image: '/product-4.jpg?v=3',
+    name: 'Bespoke Perfumes, Attar & Aroma Oils',
+    image: '/product-2.jpg?v=2',
   },
 ]
 
