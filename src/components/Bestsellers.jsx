@@ -30,7 +30,9 @@ export default function Bestsellers() {
               {product.name ? (
                 <h3 className="bestsellers__name">{product.name}</h3>
               ) : null}
-              <p className="bestsellers__desc">{product.desc}</p>
+              {product.desc ? (
+                <p className="bestsellers__desc">{product.desc}</p>
+              ) : null}
             </article>
           ))}
         </div>

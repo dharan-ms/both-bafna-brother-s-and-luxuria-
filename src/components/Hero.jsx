@@ -55,7 +55,19 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="hero__tear" aria-hidden="true" />
+      <div className="hero__tear" aria-hidden="true">
+        <svg
+          className="hero__tear-svg"
+          viewBox="0 0 1440 64"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            className="hero__tear-fill"
+            d="M0 64V28c60-10 120 8 180 0s120-12 180-2 120 10 180 2 120-10 180-2 120 8 180 0 120-8 180-2 120 6 180 2 120-6 180 0V64H0Z"
+          />
+        </svg>
+      </div>
     </section>
   )
 }

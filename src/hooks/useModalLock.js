@@ -1,6 +1,5 @@
 import { useEffect } from 'react'
 
-/** Lock body scroll and close on Escape while a modal is open. */
 export function useModalLock(open, onClose) {
   useEffect(() => {
     if (!open) return undefined

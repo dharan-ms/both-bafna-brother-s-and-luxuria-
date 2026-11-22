@@ -138,3 +138,34 @@
     max-width: none;
   }
 }
+
+@media (max-width: 640px) {
+  .newsletter__visual {
+    min-height: 180px;
+  }
+
+  .newsletter__title {
+    font-size: clamp(1.65rem, 7vw, 2.1rem);
+  }
+
+  .newsletter__desc {
+    font-size: 0.84rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .newsletter__form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.9rem;
+  }
+
+  .newsletter__form input {
+    flex: none;
+    width: 100%;
+  }
+
+  .newsletter__form .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

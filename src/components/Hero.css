@@ -181,62 +181,18 @@
   bottom: -1px;
   height: 52px;
   z-index: 6;
-  background: var(--cream);
-  clip-path: polygon(
-    0% 100%,
-    0% 55%,
-    2% 68%,
-    4% 42%,
-    6% 70%,
-    8% 38%,
-    10% 65%,
-    12% 45%,
-    14% 72%,
-    16% 40%,
-    18% 62%,
-    20% 48%,
-    22% 70%,
-    24% 35%,
-    26% 68%,
-    28% 42%,
-    30% 65%,
-    32% 50%,
-    34% 72%,
-    36% 38%,
-    38% 64%,
-    40% 45%,
-    42% 70%,
-    44% 40%,
-    46% 66%,
-    48% 48%,
-    50% 72%,
-    52% 42%,
-    54% 65%,
-    56% 38%,
-    58% 70%,
-    60% 45%,
-    62% 68%,
-    64% 40%,
-    66% 65%,
-    68% 48%,
-    70% 72%,
-    72% 38%,
-    74% 66%,
-    76% 45%,
-    78% 70%,
-    80% 42%,
-    82% 65%,
-    84% 50%,
-    86% 72%,
-    88% 40%,
-    90% 65%,
-    92% 48%,
-    94% 70%,
-    96% 42%,
-    98% 62%,
-    100% 50%,
-    100% 100%
-  );
+  pointer-events: none;
+  line-height: 0;
+}
+
+.hero__tear-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__tear-fill {
+  fill: var(--cream);
 }
 
 @media (max-width: 900px) {
@@ -252,10 +208,12 @@
   .hero__content {
     max-width: 100%;
     margin-left: auto;
+    margin-right: auto;
+    width: min(1200px, 92%);
   }
 
   .hero__title {
-    font-size: 2.55rem;
+    font-size: clamp(2.2rem, 8vw, 2.55rem);
   }
 
   .hero__overlay {
@@ -267,5 +225,67 @@
         rgba(18, 5, 10, 0.45) 100%
       ),
       linear-gradient(to top, rgba(18, 5, 10, 0.65) 0%, transparent 40%);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    justify-content: flex-end;
+    min-height: 100svh;
+    padding: 5.25rem 0 0;
+  }
+
+  .hero__content {
+    width: min(1200px, 100%);
+    padding-inline: 1.15rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    margin-bottom: 0.85rem;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 9.5vw, 2.35rem);
+    margin-bottom: 0.85rem;
+  }
+
+  .hero__desc {
+    font-size: 0.88rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .hero__ctas {
+    gap: 0.85rem;
+  }
+
+  .btn {
+    padding: 0.85rem 1.25rem;
+  }
+
+  .hero__trust {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    padding: 1rem 1.15rem 4.25rem;
+  }
+
+  .hero__trust-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 0.85rem;
+  }
+
+  .hero__trust-item {
+    font-size: 0.68rem;
+  }
+
+  .hero__tear {
+    height: 40px;
   }
 }

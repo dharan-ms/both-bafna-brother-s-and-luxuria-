@@ -22,7 +22,7 @@ export default function Footer({ onOpenHistory, onOpenVideos }) {
           <h4>Products</h4>
           <ul>
             <li><a href="#shop">Bafna Saffron</a></li>
-            <li><a href="#shop">Luxuria Signature Gift Set</a></li>
+            <li><a href="#shop">Bespoke Perfumes, Attar &amp; Aroma Oils</a></li>
             <li><a href="#shop">Shahi Kesariya Syrup</a></li>
             <li><a href="#shop">Genuine Garden Premium</a></li>
           </ul>

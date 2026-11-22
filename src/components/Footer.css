@@ -118,8 +118,30 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 640px) {
+  .footer {
+    padding-top: 2.75rem;
+  }
+
   .footer__inner {
     grid-template-columns: 1fr;
+    gap: 1.75rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .footer__logos .brand-logos__img {
+    height: 72px;
+    max-width: min(320px, 100%);
+  }
+
+  .footer__tagline {
+    max-width: none;
+    font-size: 0.8rem;
+  }
+
+  .footer__bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
   }
 }

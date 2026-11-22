@@ -149,11 +149,6 @@
   object-fit: cover;
 }
 
-.hcard__image--lab {
-  border: 1px solid #c29b40;
-}
-
-/* Heritage */
 .hcard--heritage .hcard__heritage-head {
   display: flex;
   align-items: center;
@@ -268,7 +263,22 @@
 
 @media (max-width: 640px) {
   .history-modal {
-    padding: 0.45rem;
+    padding: 0;
+    place-items: stretch;
+  }
+
+  .history-modal__panel {
+    width: 100%;
+    max-height: 100dvh;
+    border: 0;
+  }
+
+  .history-modal__top {
+    padding: 0.9rem 1rem;
+  }
+
+  .history-modal__title {
+    font-size: 1.35rem;
   }
 
   .history-modal__scroll {
@@ -277,6 +287,19 @@
   }
 
   .hcard {
-    padding: 1.25rem 1rem 1rem;
+    padding: 1.15rem 0.9rem 0.95rem;
+  }
+
+  .hcard__script {
+    font-size: 1.45rem;
+  }
+
+  .hcard__years {
+    font-size: clamp(2.4rem, 14vw, 3.4rem);
+  }
+
+  .hcard__point {
+    grid-template-columns: 40px 1fr;
+    gap: 0.65rem;
   }
 }

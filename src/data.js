@@ -1,29 +1,27 @@
 export const products = [
   {
     id: 1,
-    desc: 'Bafna Saffron has been used by more than 90,000 pregnant mother worldwide.',
-    image: '/product-1.jpg',
+    desc: 'Bafna Brothers Kesarwala has been used by more than 90,000 pregnant mother worldwide.',
+    image: '/product-1.jpg?v=2',
   },
   {
     id: 2,
-    name: 'Luxuria Signature Gift Set',
-    tagline: 'Wedding · Festive · Corporate',
-    desc: 'Opulent curated gifts — perfume, attar & Luxuria Signature favourites.',
-    image: '/product-2.jpg',
+    name: 'Bespoke Perfumes, Attar & Aroma Oils',
+    image: '/product-2.jpg?v=2',
   },
   {
     id: 3,
     name: 'Shahi Kesariya Syrup',
-    tagline: 'Limited Edition · 250 ml',
-    desc: 'Enriched with gold & silver flakes — Luxuria Signature.',
+    tagline: 'Luxury Syrup',
+    desc: 'Enriched with Gold & Silver flakes for a touch of elegance.',
     image: '/product-3.jpg',
   },
   {
     id: 4,
     name: 'Genuine Garden Premium Saffron',
     tagline: 'World Finest Saffron · 1.00 g',
-    desc: 'The world’s most exclusive spice — pure, natural, non-irradiated.',
-    image: '/product-4.jpg',
+    desc: "The world's most precious spices — hand-graded, deep-red, and lab-certified pure.",
+    image: '/product-4.jpg?v=3',
   },
 ]
 

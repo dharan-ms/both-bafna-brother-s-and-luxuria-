@@ -10,7 +10,6 @@ import Luxuria from './components/Luxuria'
 import Founder from './components/Founder'
 import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
-import './App.css'
 
 function initialHash(hash) {
   return typeof window !== 'undefined' && window.location.hash === hash

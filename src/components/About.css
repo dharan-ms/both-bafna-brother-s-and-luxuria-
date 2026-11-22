@@ -21,7 +21,6 @@
 
 .about__title-line {
   display: block;
-  white-space: nowrap;
 }
 
 .about__text {
@@ -73,5 +72,30 @@
 
   .about__title {
     font-size: clamp(1.35rem, 5.2vw, 1.85rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding: 3.25rem 0 3.5rem;
+  }
+
+  .about__inner {
+    gap: 1.75rem;
+  }
+
+  .about__title {
+    font-size: clamp(1.3rem, 6.2vw, 1.65rem);
+    margin-bottom: 1rem;
+  }
+
+  .about__text {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    margin-bottom: 1.35rem;
+  }
+
+  .about__video-frame {
+    border-radius: 10px;
   }
 }

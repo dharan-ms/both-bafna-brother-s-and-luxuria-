@@ -1,7 +1,8 @@
 .brand-logos {
   display: inline-flex;
   align-items: center;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  min-width: 0;
   line-height: 0;
 }
 
@@ -15,31 +16,26 @@
   background: transparent;
 }
 
-.brand-logos--default .brand-logos__img {
-  height: 96px;
-}
-
 .brand-logos--lg .brand-logos__img {
   height: 130px;
   max-width: min(680px, 96%);
 }
 
-.brand-logos--sm .brand-logos__img {
-  height: 72px;
-  max-width: min(380px, 65vw);
-}
-
 @media (max-width: 1100px) {
-  .brand-logos--default .brand-logos__img {
+  .brand-logos__img {
     height: 82px;
     max-width: min(440px, 54vw);
+  }
+
+  .brand-logos--lg .brand-logos__img {
+    height: 110px;
   }
 }
 
 @media (max-width: 720px) {
-  .brand-logos--default .brand-logos__img {
-    height: 64px;
-    max-width: min(320px, 70vw);
+  .brand-logos__img {
+    height: 72px;
+    max-width: min(320px, 78vw);
   }
 
   .brand-logos--lg .brand-logos__img {

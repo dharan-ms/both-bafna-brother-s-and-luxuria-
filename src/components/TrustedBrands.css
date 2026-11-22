@@ -41,3 +41,21 @@
   display: block;
   object-fit: contain;
 }
+
+@media (max-width: 640px) {
+  .brands {
+    padding: 3rem 0 3.25rem;
+  }
+
+  .brands__header {
+    margin-bottom: 1.35rem;
+  }
+
+  .brands__title {
+    font-size: clamp(1.65rem, 7vw, 2.1rem);
+  }
+
+  .brands__frame {
+    border-radius: 6px;
+  }
+}
