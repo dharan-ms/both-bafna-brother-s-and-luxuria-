@@ -5,8 +5,8 @@ import About from './components/About'
 import History from './components/History'
 import Videos from './components/Videos'
 import Bestsellers from './components/Bestsellers'
-import TrustedBrands from './components/TrustedBrands'
 import Luxuria from './components/Luxuria'
+import Ritual from './components/Ritual'
 import Founder from './components/Founder'
 import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
@@ -43,8 +43,8 @@ export default function App() {
         <Hero />
         <About />
         <Bestsellers />
-        <TrustedBrands />
         <Luxuria />
+        <Ritual />
         <Founder />
         <Newsletter />
       </main>

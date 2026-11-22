@@ -8,8 +8,7 @@ export default function Bestsellers() {
         <header className="bestsellers__header">
           <h2 className="bestsellers__eyebrow">Our Products</h2>
           <p className="bestsellers__intro">
-            From Kashmiri Mongra saffron to Shahi Kesariya syrup — pure,
-            precious, and crafted with care since 1979.
+            A perfect Combination of Health And Royalty
           </p>
         </header>
 

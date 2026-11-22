@@ -1,4 +1,3 @@
-import BrandLogos from './BrandLogos'
 import SocialLinks from './SocialLinks'
 import './Founder.css'
 
@@ -7,12 +6,11 @@ export default function Founder() {
     <section className="founder" id="founder">
       <div className="founder__inner container">
         <div className="founder__portrait">
-          <div className="founder__frame">
-            <img
-              src="/founder.jpg"
-              alt="Mr. Jawantraji Bafna, Founder of Bafna Brothers Kesarwala"
-            />
-          </div>
+          <img
+            className="founder__photo"
+            src="/founder.jpg?v=5"
+            alt="Mr. Jawantraji Bafna, Founder of Bafna Brothers Kesarwala"
+          />
         </div>
 
         <div className="founder__content">
@@ -26,10 +24,7 @@ export default function Founder() {
             every step of our operations.
           </p>
 
-          <div className="founder__marks">
-            <BrandLogos size="lg" />
-            <p className="founder__gifts">Wedding, Festive &amp; Corporate Gifts</p>
-          </div>
+          <p className="founder__gifts">Wedding, Festive &amp; Corporate Gifts</p>
 
           <div className="founder__meta">
             <p className="founder__care">

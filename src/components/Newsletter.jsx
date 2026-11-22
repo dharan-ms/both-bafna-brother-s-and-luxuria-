@@ -29,10 +29,10 @@ export default function Newsletter() {
 
         <div className="newsletter__content">
           <p className="newsletter__eyebrow">Stay Connected</p>
-          <h2 className="newsletter__title">Gift Like Never Before</h2>
+          <h2 className="newsletter__title">A ritual for every hour.</h2>
           <p className="newsletter__desc">
-            Get updates on Grade A saffron, edible gold &amp; silver leaf, and
-            exclusive offers from Bafna Brothers Kesarwala.
+            From morning glass to festive table the way a pinch of kesar quietly
+            runs through an Indian day.
           </p>
 
           {done ? (

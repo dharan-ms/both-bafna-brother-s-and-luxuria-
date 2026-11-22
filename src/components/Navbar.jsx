@@ -7,7 +7,6 @@ const NAV_LINKS = [
   { href: '#home', label: 'Home', id: 'home' },
   { href: '#about', label: 'About', id: 'about' },
   { href: '#shop', label: 'Products', id: 'shop' },
-  { href: '#brands', label: 'Brands', id: 'brands' },
   { href: '#luxuria', label: 'Luxuria', id: 'luxuria' },
   { href: '#history', label: 'History', id: 'history' },
   { href: '#video', label: 'Video', id: 'video' },

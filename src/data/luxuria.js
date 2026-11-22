@@ -96,18 +96,14 @@ export const luxuriaCollections = [
     image: '/luxuria/chyawanprash.jpg',
   },
   {
-    id: 'hampers',
-    title: 'Personalized Gift Hampers',
-    lead: 'Gift like never before — curated festive, wedding and corporate hampers with honey, oils, and Luxuria Signature favourites.',
+    id: 'mountain-water',
+    title: '24k Gold Mountain Water',
+    lead: 'Refined Experience, Inspired by Nature',
     items: [
-      'Festive Gifts',
-      'Wedding Gifts',
-      'Corporate Gifts',
-      'Custom product selection',
-      'Elegant luxury packaging',
+      'Benefits that Rejuvenates',
+      'The Body & Restore Youth & Perfect Health',
     ],
-    note: 'Pan India & international shipping',
-    image: '/luxuria/gift-hamper.jpg',
+    image: '/luxuria/mountain-water.jpg',
   },
 ]
 
