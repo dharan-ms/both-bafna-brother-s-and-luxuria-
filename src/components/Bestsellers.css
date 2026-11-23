@@ -87,7 +87,7 @@
   font-weight: 700;
   color: #fff;
   line-height: 1.25;
-  margin-bottom: 0.45rem;
+  margin: 0 0 0.35rem;
 }
 
 .bestsellers__desc {
@@ -96,7 +96,7 @@
   line-height: 1.55;
   color: rgba(255, 255, 255, 0.92);
   max-width: 28ch;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 1000px) {
@@ -127,17 +127,29 @@
   }
 
   .bestsellers__image-wrap {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.55rem;
     border-radius: 8px;
   }
 
+  .bestsellers__card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
   .bestsellers__name {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
   }
 
   .bestsellers__desc {
     font-size: 0.74rem;
     max-width: none;
+    margin-bottom: 0;
+  }
+
+  .bestsellers__tagline {
+    margin-bottom: 0.25rem;
   }
 }
 

@@ -45,8 +45,8 @@ export default function TrustedBrands() {
       </div>
 
       <div className="brands__marquee" role="presentation">
-        <MarqueeRow brands={trustedBrandsRowA} direction="left" duration={55} />
-        <MarqueeRow brands={trustedBrandsRowB} direction="right" duration={62} />
+        <MarqueeRow brands={trustedBrandsRowA} direction="left" duration={70} />
+        <MarqueeRow brands={trustedBrandsRowB} direction="right" duration={78} />
       </div>
     </section>
   )

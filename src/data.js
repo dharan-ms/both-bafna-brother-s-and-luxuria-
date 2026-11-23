@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    name: 'A pinch of kesar in the morning begins with Pooja Tilak',
+    name: 'A pinch of kesar in the morning begins',
     desc: 'Saffron has held a sacred place in India worship for as long as anyone can remember',
     image: '/pooja-tilak.jpg',
   },
