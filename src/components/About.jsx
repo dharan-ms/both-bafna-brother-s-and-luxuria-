@@ -1,5 +1,9 @@
 import VideoPlayer from './VideoPlayer'
+import { InstagramIcon } from './icons'
 import './About.css'
+
+const INSTAGRAM_HREF =
+  'https://www.instagram.com/bafnabrotherskesarwala?utm_source=qr'
 
 export default function About() {
   return (
@@ -21,9 +25,20 @@ export default function About() {
             commitment to excellence, which continues to be the cornerstone of
             our business.
           </p>
-          <a href="#luxuria" className="btn btn--burgundy">
-            Explore Luxuria <span aria-hidden="true">→</span>
-          </a>
+          <div className="about__actions">
+            <a href="#luxuria" className="btn btn--burgundy">
+              Explore Luxuria <span aria-hidden="true">→</span>
+            </a>
+            <a
+              className="about__instagram"
+              href={INSTAGRAM_HREF}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Bafna Brothers Kesarwala on Instagram"
+            >
+              <InstagramIcon size={22} />
+            </a>
+          </div>
         </div>
 
         <div className="about__media">
