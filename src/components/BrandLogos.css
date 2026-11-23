@@ -18,7 +18,7 @@
   image-rendering: high-quality;
   backface-visibility: hidden;
   transform: translateZ(0);
-  filter: brightness(1.08) contrast(1.06) saturate(1.12);
+  filter: brightness(1.02) contrast(1.04) saturate(1.05);
 }
 
 .brand-logos--lg .brand-logos__img {
