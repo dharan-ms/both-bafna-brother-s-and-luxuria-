@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import VideoPlayer from './VideoPlayer'
 import './Newsletter.css'
 
 export default function Newsletter() {
@@ -16,13 +17,10 @@ export default function Newsletter() {
     <section className="newsletter" id="newsletter">
       <div className="newsletter__inner container">
         <div className="newsletter__visual">
-          <video
+          <VideoPlayer
             className="newsletter__video"
             src="/videos/saffron.mp4"
-            controls
-            playsInline
-            preload="metadata"
-            aria-label="Bafna Brothers Kesarwala video"
+            ariaLabel="Bafna Brothers Kesarwala video"
           />
           <div className="newsletter__visual-fade" aria-hidden="true" />
         </div>

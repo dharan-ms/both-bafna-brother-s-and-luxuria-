@@ -15,45 +15,24 @@
 .social-links__row {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.75rem;
 }
 
 .social-links__item {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 1px solid rgba(194, 155, 64, 0.4);
+  border: 1.5px solid rgba(212, 175, 90, 0.75);
   color: var(--gold-light);
   display: grid;
   place-items: center;
-  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease,
-    transform 0.2s ease;
+  background: transparent;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .social-links__item:hover {
-  background: rgba(194, 155, 64, 0.15);
-  border-color: var(--gold-light);
-  color: var(--cream);
-}
-
-.social-links__item--app {
-  width: 34px;
-  height: 34px;
-  border: none;
-  background: transparent;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
-}
-
-.social-links__item--app svg {
-  display: block;
-  width: 34px;
-  height: 34px;
-}
-
-.social-links__item--app:hover {
-  background: transparent;
-  border: none;
-  transform: translateY(-2px);
+  background: rgba(194, 155, 64, 0.1);
+  border-color: #e8c56a;
+  color: #e8c56a;
 }

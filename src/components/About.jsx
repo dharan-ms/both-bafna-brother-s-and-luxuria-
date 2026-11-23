@@ -1,3 +1,4 @@
+import VideoPlayer from './VideoPlayer'
 import './About.css'
 
 export default function About() {
@@ -27,12 +28,10 @@ export default function About() {
 
         <div className="about__media">
           <div className="about__video-frame">
-            <video
+            <VideoPlayer
               className="about__video"
-              src="/about.mp4?v=2"
-              controls
-              playsInline
-              preload="metadata"
+              src="/about.mp4"
+              ariaLabel="About Bafna Brothers Kesarwala"
             />
           </div>
         </div>

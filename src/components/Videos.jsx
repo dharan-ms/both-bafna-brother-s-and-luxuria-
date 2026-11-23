@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { X } from 'lucide-react'
 import { videoStories } from '../data/videos'
 import { useModalLock } from '../hooks/useModalLock'
+import VideoPlayer from './VideoPlayer'
 import './Videos.css'
 
 export default function Videos({ open, onClose }) {
@@ -30,19 +31,12 @@ export default function Videos({ open, onClose }) {
       aria-modal="true"
       aria-labelledby="videos-title"
     >
-      <button
-        type="button"
-        className="videos-modal__backdrop"
-        aria-label="Close videos"
-        onClick={onClose}
-      />
-
       <div className="videos-modal__panel" ref={panelRef}>
         <header className="videos-modal__top">
-          <div>
+          <div className="videos-modal__brand">
             <p className="videos-modal__eyebrow">Bafna Brothers Kesarwala</p>
             <h2 id="videos-title" className="videos-modal__title">
-              Video
+              Our Stories in Motion
             </h2>
           </div>
           <button
@@ -52,29 +46,37 @@ export default function Videos({ open, onClose }) {
             onClick={onClose}
           >
             <X size={18} strokeWidth={1.8} />
+            <span>Close</span>
           </button>
         </header>
 
         <div className="videos-modal__scroll">
+          <p className="videos-modal__intro">
+            Watch how saffron, fragrance and craft come alive — scroll and play
+            each film.
+          </p>
+
           {videoStories.map((story, index) => (
             <article
               key={story.id}
               className={`video-row${index % 2 === 1 ? ' video-row--reverse' : ''}`}
             >
-              <div className="video-row__copy">
-                <p className="video-row__eyebrow">{story.eyebrow}</p>
-                <h3 className="video-row__title">{story.title}</h3>
-                <p className="video-row__text">{story.text}</p>
-              </div>
-
               <div className="video-row__media">
-                <video
+                <VideoPlayer
                   className="video-row__player"
                   src={story.src}
-                  controls
-                  playsInline
-                  preload="metadata"
+                  ariaLabel={story.title}
                 />
+              </div>
+
+              <div className="video-row__copy">
+                {story.eyebrow ? (
+                  <p className="video-row__eyebrow">{story.eyebrow}</p>
+                ) : null}
+                <h3 className="video-row__title">{story.title}</h3>
+                {story.text ? (
+                  <p className="video-row__text">{story.text}</p>
+                ) : null}
               </div>
             </article>
           ))}

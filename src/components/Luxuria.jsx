@@ -52,10 +52,8 @@ export default function Luxuria() {
               <img src={collection.image} alt={collection.title} loading="lazy" />
             </div>
             <div className="luxuria__collection-copy">
-              {collection.eyebrow !== null ? (
-                <p className="luxuria__eyebrow">
-                  {collection.eyebrow || 'Luxuria Signature'}
-                </p>
+              {collection.eyebrow ? (
+                <p className="luxuria__eyebrow">{collection.eyebrow}</p>
               ) : null}
               <h3>{collection.title}</h3>
               {collection.tagline ? (

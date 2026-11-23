@@ -9,36 +9,41 @@
 .brand-logos__img {
   display: block;
   width: auto;
-  height: 96px;
-  max-width: min(520px, 58vw);
+  height: 148px;
+  max-width: min(760px, 72vw);
   object-fit: contain;
   object-position: left center;
   background: transparent;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: high-quality;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  filter: brightness(1.08) contrast(1.06) saturate(1.12);
 }
 
 .brand-logos--lg .brand-logos__img {
-  height: 130px;
-  max-width: min(680px, 96%);
+  height: 188px;
+  max-width: min(920px, 96%);
 }
 
 @media (max-width: 1100px) {
   .brand-logos__img {
-    height: 82px;
-    max-width: min(440px, 54vw);
+    height: 124px;
+    max-width: min(640px, 68vw);
   }
 
   .brand-logos--lg .brand-logos__img {
-    height: 110px;
+    height: 156px;
   }
 }
 
 @media (max-width: 720px) {
   .brand-logos__img {
-    height: 72px;
-    max-width: min(320px, 78vw);
+    height: 104px;
+    max-width: min(440px, 88vw);
   }
 
   .brand-logos--lg .brand-logos__img {
-    height: 96px;
+    height: 132px;
   }
 }

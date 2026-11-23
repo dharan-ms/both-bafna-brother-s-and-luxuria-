@@ -32,9 +32,9 @@ export const trustItems = [
 ]
 
 export const contacts = [
-  { name: 'Nagin Bafna', phone: '9820568100', display: '98205 68100' },
   { name: 'Kamlesh Bafna', phone: '8080006363', display: '80800 06363' },
   { name: 'Dishant Bafna', phone: '9892394351', display: '98923 94351' },
+  { name: 'Nagin Bafna', phone: '9820568100', display: '98205 68100' },
 ]
 
 export const email = 'bafnabrotherskesarwala@gmail.com'
