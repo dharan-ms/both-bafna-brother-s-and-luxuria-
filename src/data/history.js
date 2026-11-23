@@ -6,8 +6,16 @@ export const historySections = [
     title: 'Bafna Brothers Kesarwala: A Legacy of Excellence Since 1979',
     text: 'For over four decades, Bafna Brothers Kesarwala has been synonymous with unparalleled quality and tradition. Established in 1979, we have dedicated ourselves to delivering the finest saffron to our discerning customers. Our journey began with a passion for purity and a commitment to excellence, which continues to be the cornerstone of our business.',
     accent: 'A precious gift of the Nature',
-    image: '/history-gift-nature.jpg',
-    imageAlt: 'Genuine Garden Saffron — a precious gift of the Nature',
+    images: [
+      {
+        src: '/history-founder-legacy.jpg',
+        alt: 'Mr. Jawantraji Bafna with Bafna Brothers saffron',
+      },
+      {
+        src: '/history-founder-harvest.jpg',
+        alt: 'Hand-harvesting saffron in the flower fields',
+      },
+    ],
   },
   {
     id: 'heritage',
@@ -30,8 +38,8 @@ export const historySections = [
         icon: 'pin',
         title: 'A legacy of quality & consistency',
         text: 'We understand that doing honest service takes commitment and heart.',
-        image: '/history-saffron-field.jpg',
-        imageAlt: 'Fresh saffron flower and threads in a Kashmir harvest field',
+        image: '/history-saffron-water.jpg',
+        imageAlt: 'Saffron water with Bafna Brothers Pure Saffron',
       },
     ],
   },

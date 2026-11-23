@@ -32,10 +32,15 @@ export const trustItems = [
 ]
 
 export const contacts = [
-  { name: 'Kamlesh Bafna', phone: '8080006363' },
-  { name: 'Dishant Bafna', phone: '9892394351' },
-  { name: 'Nagin Bafna', phone: '9820568100' },
+  { name: 'Nagin Bafna', phone: '9820568100', display: '98205 68100' },
+  { name: 'Kamlesh Bafna', phone: '8080006363', display: '80800 06363' },
+  { name: 'Dishant Bafna', phone: '9892394351', display: '98923 94351' },
 ]
+
+export const email = 'bafnabrotherskesarwala@gmail.com'
+
+export const mapLink =
+  'https://www.google.com/maps?ll=18.951669,72.830607&z=15&t=m&hl=en&gl=IN&mapclient=embed&cid=16523523017766492635'
 
 export const address = {
   lines: [

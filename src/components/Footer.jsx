@@ -1,4 +1,4 @@
-import { address, contacts } from '../data'
+import { address, contacts, email, mapLink } from '../data'
 import BrandLogos from './BrandLogos'
 import SocialLinks from './SocialLinks'
 import './Footer.css'
@@ -92,6 +92,7 @@ export default function Footer({ onOpenHistory, onOpenVideos }) {
               </li>
               <li><a href="#founder">Our Founder</a></li>
               <li><a href="#luxuria">Luxuria Signature</a></li>
+              <li><a href="#brands">Trusted Brands</a></li>
             </ul>
           </div>
 
@@ -101,10 +102,15 @@ export default function Footer({ onOpenHistory, onOpenVideos }) {
               {contacts.map((person) => (
                 <li key={person.phone}>
                   <span className="footer__person">{person.name}</span>
-                  <a href={`tel:+91${person.phone}`}>M : {person.phone}</a>
+                  <a href={`tel:+91${person.phone}`}>
+                    M : {person.display || person.phone}
+                  </a>
                 </li>
               ))}
             </ul>
+            <a className="footer__email" href={`mailto:${email}`}>
+              {email}
+            </a>
           </div>
 
           <div className="footer__col">
@@ -115,6 +121,14 @@ export default function Footer({ onOpenHistory, onOpenVideos }) {
               ))}
             </address>
             <p className="footer__tel">Tel : {address.tel}</p>
+            <a
+              className="footer__map"
+              href={mapLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on Google Maps
+            </a>
           </div>
         </div>
       </div>

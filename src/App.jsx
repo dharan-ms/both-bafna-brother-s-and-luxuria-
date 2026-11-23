@@ -5,6 +5,7 @@ import About from './components/About'
 import History from './components/History'
 import Videos from './components/Videos'
 import Bestsellers from './components/Bestsellers'
+import TrustedBrands from './components/TrustedBrands'
 import Luxuria from './components/Luxuria'
 import Founder from './components/Founder'
 import Newsletter from './components/Newsletter'
@@ -42,6 +43,7 @@ export default function App() {
         <Hero />
         <About />
         <Bestsellers />
+        <TrustedBrands />
         <Luxuria />
         <Founder />
         <Newsletter />

@@ -170,7 +170,15 @@ function SectionBlock({ section }) {
       {section.accent ? (
         <p className="history-page__accent">{section.accent}</p>
       ) : null}
-      {section.image ? (
+      {section.images?.length ? (
+        <div className="history-page__pair">
+          {section.images.map((img) => (
+            <figure key={img.src} className="history-page__pair-figure">
+              <img src={img.src} alt={img.alt || ''} loading="lazy" />
+            </figure>
+          ))}
+        </div>
+      ) : section.image ? (
         <figure className="history-page__figure">
           <img
             src={section.image}
@@ -191,7 +199,7 @@ export default function History({ open, onClose }) {
   return (
     <div className="history-page" role="dialog" aria-modal="true" aria-labelledby="history-title">
       <header className="history-page__nav">
-        <div className="history-page__nav-inner container">
+        <div className="history-page__nav-inner">
           <a href="#home" className="history-page__logo" onClick={onClose} aria-label="Bafna Brothers home">
             <BrandLogos />
           </a>
@@ -203,7 +211,7 @@ export default function History({ open, onClose }) {
       </header>
 
       <main className="history-page__main">
-        <div className="history-page__hero container">
+        <div className="history-page__hero">
           <p className="history-page__brand">Bafna Brothers Kesarwala</p>
           <h1 id="history-title">History</h1>
           <p className="history-page__intro">
@@ -212,7 +220,7 @@ export default function History({ open, onClose }) {
           </p>
         </div>
 
-        <div className="history-page__content container">
+        <div className="history-page__content">
           {historySections.map((section) => (
             <SectionBlock key={section.id} section={section} />
           ))}

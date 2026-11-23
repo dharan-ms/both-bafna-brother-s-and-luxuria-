@@ -18,13 +18,13 @@
 }
 
 .founder__photo {
-  width: min(100%, 360px);
+  width: min(100%, 240px);
   height: auto;
   display: block;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: center top;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
 .founder__eyebrow {
@@ -128,7 +128,7 @@
   }
 
   .founder__photo {
-    width: min(100%, 280px);
+    width: min(100%, 200px);
   }
 
   .founder__title {

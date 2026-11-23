@@ -107,14 +107,14 @@ export const luxuriaCollections = [
 export const luxuriaHighlights = [
   {
     title: 'Festive Gifts',
-    text: 'Curated hampers for celebrations and festivals.',
+    text: 'Celebrate Every Occasion with Elegance.',
   },
   {
     title: 'Wedding Gifts',
-    text: 'Opulent presents for weddings and mehendi.',
+    text: 'Opulent gifts, thoughtfully curated to celebrate weddings, mehendi ceremonies, and timeless traditions.',
   },
   {
     title: 'Corporate Gifts',
-    text: 'Premium assortments for discerning clients.',
+    text: 'Perfect for Clients | Employees | Business Partners | VIP Gifting',
   },
 ]

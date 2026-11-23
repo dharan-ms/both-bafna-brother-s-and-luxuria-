@@ -8,7 +8,7 @@ export default function Founder() {
         <div className="founder__portrait">
           <img
             className="founder__photo"
-            src="/founder.jpg?v=5"
+            src="/founder.jpg?v=6"
             alt="Mr. Jawantraji Bafna, Founder of Bafna Brothers Kesarwala"
           />
         </div>
