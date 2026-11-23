@@ -7,6 +7,7 @@ import Videos from './components/Videos'
 import Bestsellers from './components/Bestsellers'
 import TrustedBrands from './components/TrustedBrands'
 import Luxuria from './components/Luxuria'
+import Feedback from './components/Feedback'
 import Founder from './components/Founder'
 import Contact from './components/Contact'
 import Newsletter from './components/Newsletter'
@@ -46,6 +47,7 @@ export default function App() {
         <Bestsellers />
         <TrustedBrands />
         <Luxuria />
+        <Feedback />
         <Founder />
         <Contact />
         <Newsletter />

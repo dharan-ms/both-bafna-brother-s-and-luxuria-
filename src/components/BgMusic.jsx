@@ -1,85 +1,123 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Music, VolumeX } from 'lucide-react'
 import './BgMusic.css'
 
-const MUSIC_SRC = '/audio/bg-music.mp3'
+const MUSIC_SRC = '/audio/bg-music-web.mp3?v=2'
+const MUSIC_VOLUME = 0.1
+
+let sharedAudio = null
+
+function getAudio() {
+  if (typeof window === 'undefined') return null
+
+  if (!sharedAudio) {
+    sharedAudio = new Audio(MUSIC_SRC)
+    sharedAudio.loop = true
+    sharedAudio.preload = 'auto'
+    sharedAudio.volume = MUSIC_VOLUME
+    sharedAudio.setAttribute('playsinline', 'true')
+  }
+
+  sharedAudio.volume = MUSIC_VOLUME
+  return sharedAudio
+}
+
+async function startMusic() {
+  const audio = getAudio()
+  if (!audio) return false
+
+  audio.volume = MUSIC_VOLUME
+  try {
+    await audio.play()
+    return !audio.paused
+  } catch {
+    return false
+  }
+}
+
+function stopMusic() {
+  const audio = getAudio()
+  if (!audio) return
+  audio.pause()
+}
 
 export default function BgMusic() {
-  const audioRef = useRef(null)
-  const [playing, setPlaying] = useState(false)
+  const [playing, setPlaying] = useState(() => Boolean(sharedAudio && !sharedAudio.paused))
 
   useEffect(() => {
-    const audio = audioRef.current
+    const audio = getAudio()
     if (!audio) return undefined
 
-    audio.loop = true
-    audio.volume = 0.55
+    const sync = () => setPlaying(!audio.paused)
+    audio.addEventListener('play', sync)
+    audio.addEventListener('pause', sync)
+    audio.addEventListener('ended', sync)
 
-    const markPlaying = () => setPlaying(true)
-    const markPaused = () => setPlaying(false)
+    startMusic().then((ok) => setPlaying(ok))
 
-    audio.addEventListener('play', markPlaying)
-    audio.addEventListener('pause', markPaused)
-
-    const tryPlay = () => {
-      const playPromise = audio.play()
-      if (playPromise?.then) {
-        playPromise.catch(() => {
-          setPlaying(false)
-        })
+    const unlock = async (event) => {
+      if (event.target?.closest?.('.bg-music')) return
+      if (!audio.paused) {
+        cleanup()
+        return
       }
+      const ok = await startMusic()
+      setPlaying(ok)
+      if (ok) cleanup()
     }
 
-    tryPlay()
-
-    const unlock = () => {
-      if (audio.paused) tryPlay()
-      window.removeEventListener('pointerdown', unlock)
-      window.removeEventListener('keydown', unlock)
-      window.removeEventListener('touchstart', unlock)
+    const cleanup = () => {
+      window.removeEventListener('pointerdown', unlock, true)
+      window.removeEventListener('keydown', unlock, true)
+      window.removeEventListener('touchstart', unlock, true)
+      window.removeEventListener('click', unlock, true)
     }
 
-    window.addEventListener('pointerdown', unlock, { passive: true })
-    window.addEventListener('keydown', unlock)
-    window.addEventListener('touchstart', unlock, { passive: true })
+    window.addEventListener('pointerdown', unlock, true)
+    window.addEventListener('keydown', unlock, true)
+    window.addEventListener('touchstart', unlock, true)
+    window.addEventListener('click', unlock, true)
 
     return () => {
-      audio.removeEventListener('play', markPlaying)
-      audio.removeEventListener('pause', markPaused)
-      window.removeEventListener('pointerdown', unlock)
-      window.removeEventListener('keydown', unlock)
-      window.removeEventListener('touchstart', unlock)
-      audio.pause()
+      audio.removeEventListener('play', sync)
+      audio.removeEventListener('pause', sync)
+      audio.removeEventListener('ended', sync)
+      cleanup()
+      // Keep audio playing across React Strict Mode remounts.
     }
   }, [])
 
-  const toggle = () => {
-    const audio = audioRef.current
+  const toggle = async (event) => {
+    event.preventDefault()
+    event.stopPropagation()
+
+    const audio = getAudio()
     if (!audio) return
 
-    if (audio.paused) {
-      audio.play().catch(() => setPlaying(false))
-    } else {
-      audio.pause()
+    if (!audio.paused) {
+      stopMusic()
+      setPlaying(false)
+      return
     }
+
+    const ok = await startMusic()
+    setPlaying(ok)
   }
 
   return (
-    <>
-      <audio ref={audioRef} src={MUSIC_SRC} preload="auto" playsInline />
-      <button
-        type="button"
-        className={`bg-music${playing ? ' is-playing' : ''}`}
-        onClick={toggle}
-        aria-label={playing ? 'Pause music' : 'Play music'}
-        title={playing ? 'Pause music' : 'Play music'}
-      >
-        {playing ? (
-          <Music size={18} strokeWidth={1.8} />
-        ) : (
-          <VolumeX size={18} strokeWidth={1.8} />
-        )}
-      </button>
-    </>
+    <button
+      type="button"
+      className={`bg-music${playing ? ' is-playing' : ''}`}
+      onClick={toggle}
+      onPointerDown={(event) => event.stopPropagation()}
+      aria-label={playing ? 'Pause music' : 'Play music'}
+      title={playing ? 'Pause music' : 'Play music'}
+    >
+      {playing ? (
+        <Music size={18} strokeWidth={1.8} />
+      ) : (
+        <VolumeX size={18} strokeWidth={1.8} />
+      )}
+    </button>
   )
 }
