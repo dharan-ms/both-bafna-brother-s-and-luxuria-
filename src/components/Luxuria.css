@@ -7,73 +7,20 @@
 
 .luxuria__hero {
   position: relative;
-  padding: 3.5rem 1.25rem 3rem;
+  padding: clamp(1.1rem, 2.5vw, 1.85rem) 1rem;
   text-align: center;
   overflow: hidden;
   background: #ffffff;
   border-bottom: 1px solid rgba(194, 155, 64, 0.28);
 }
 
-.luxuria__brand {
-  position: relative;
-  z-index: 1;
-  max-width: 520px;
-  margin: 0 auto 2rem;
-}
-
-.luxuria__logo-img {
+.luxuria__hero-img {
   display: block;
-  width: min(240px, 58%);
+  width: min(420px, 78%);
   height: auto;
   margin: 0 auto;
   object-fit: contain;
   background: #ffffff;
-}
-
-.luxuria__info {
-  position: relative;
-  z-index: 1;
-  width: min(520px, 92%);
-  margin: 0 auto;
-  padding: 1.15rem 1.25rem 1.25rem;
-  border: 1.5px solid rgba(194, 155, 64, 0.7);
-  background: #ffffff;
-}
-
-.luxuria__locations {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.85rem;
-  margin-bottom: 0.7rem;
-}
-
-.luxuria__locations strong {
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  color: #2a0a14;
-}
-
-.luxuria__rule {
-  flex: 1;
-  max-width: 72px;
-  height: 1px;
-  background: var(--gold);
-}
-
-.luxuria__gifts {
-  font-family: var(--serif);
-  font-size: 1.05rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--gold-light);
-  margin-bottom: 0.45rem;
-}
-
-.luxuria__division {
-  font-size: 0.78rem;
-  color: #6b4a52;
 }
 
 .luxuria__intro {
@@ -279,32 +226,11 @@
 
 @media (max-width: 640px) {
   .luxuria__hero {
-    padding: 2.25rem 1rem 1.75rem;
+    padding: 1rem 0.75rem 0.9rem;
   }
 
-  .luxuria__logo-img {
-    width: min(200px, 70%);
-  }
-
-  .luxuria__info {
-    padding: 0.95rem 0.9rem 1.05rem;
-  }
-
-  .luxuria__locations {
-    gap: 0.5rem;
-  }
-
-  .luxuria__locations strong {
-    font-size: 0.78rem;
-    letter-spacing: 0.1em;
-  }
-
-  .luxuria__rule {
-    max-width: 40px;
-  }
-
-  .luxuria__gifts {
-    font-size: 0.8rem;
+  .luxuria__hero-img {
+    width: min(100%, 300px);
   }
 
   .luxuria__intro {

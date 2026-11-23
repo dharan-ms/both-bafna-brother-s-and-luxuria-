@@ -5,25 +5,15 @@ export default function Luxuria() {
   return (
     <section className="luxuria" id="luxuria">
       <div className="luxuria__hero">
-        <div className="luxuria__brand">
-          <img
-            src="/luxuria/luxuria-logo.jpg"
-            alt="Bafna's Luxuria Signature"
-            className="luxuria__logo-img"
-          />
-        </div>
-
-        <div className="luxuria__info">
-          <div className="luxuria__locations">
-            <span className="luxuria__rule" />
-            <strong>INDIA &amp; DUBAI</strong>
-            <span className="luxuria__rule" />
-          </div>
-          <p className="luxuria__gifts">
-            Festive Gifts | Wedding Gifts | Corporate Gifts
-          </p>
-          <p className="luxuria__division">A luxury division by BBK</p>
-        </div>
+        <img
+          src="/luxuria/luxuria-hero.jpg?v=3"
+          alt="Bafna's Luxuria Signature — India & Dubai · Festive, Wedding & Corporate Gifts · A luxury division by BBK"
+          className="luxuria__hero-img"
+          width={1013}
+          height={678}
+          decoding="async"
+          fetchPriority="high"
+        />
       </div>
 
       <div className="luxuria__intro container">
