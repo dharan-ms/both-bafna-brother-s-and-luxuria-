@@ -81,7 +81,7 @@
 }
 
 .luxuria__collections {
-  padding: 2rem 0 4.5rem;
+  padding: 2rem 0 2.25rem;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem 1.25rem;
@@ -141,6 +141,10 @@
   color: var(--cream);
   margin-bottom: 0.45rem;
   line-height: 1.2;
+}
+
+.luxuria__collection-copy h3.luxuria__collection-title--gold {
+  color: var(--gold-light);
 }
 
 .luxuria__collection-tagline {
@@ -210,6 +214,63 @@
   padding-top: 0.4rem;
 }
 
+.luxuria__maharaja {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 1.75rem 2.25rem;
+  align-items: center;
+  width: min(920px, 100%);
+  margin: 0 auto;
+  padding: 0.5rem 0 4.5rem;
+}
+
+.luxuria__maharaja-media {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(194, 155, 64, 0.28);
+  background: #0d0408;
+}
+
+.luxuria__maharaja-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+}
+
+.luxuria__maharaja-copy {
+  text-align: left;
+  padding-inline: 0.15rem;
+}
+
+.luxuria__maharaja-eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.luxuria__maharaja-title {
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 2.9vw, 2.4rem);
+  font-weight: 500;
+  color: var(--cream);
+  line-height: 1.2;
+  margin: 0 0 0.85rem;
+}
+
+.luxuria__maharaja-text {
+  margin: 0;
+  max-width: 28rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(249, 245, 242, 0.72);
+}
+
 @media (max-width: 860px) {
   .luxuria__highlights {
     grid-template-columns: 1fr;
@@ -221,6 +282,22 @@
     margin-inline: auto;
     padding-inline: 1.15rem;
     width: 100%;
+  }
+
+  .luxuria__maharaja {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin-inline: auto;
+    padding-inline: 1.15rem;
+    gap: 1.15rem;
+  }
+
+  .luxuria__maharaja-copy {
+    text-align: center;
+  }
+
+  .luxuria__maharaja-text {
+    margin-inline: auto;
   }
 }
 
@@ -252,12 +329,24 @@
   }
 
   .luxuria__collections {
-    padding: 1.25rem 1.15rem 3rem;
+    padding: 1.25rem 1.15rem 1.75rem;
     gap: 1.15rem;
   }
 
   .luxuria__collection-copy {
     padding: 1rem 1rem 1.15rem;
+  }
+
+  .luxuria__maharaja {
+    padding-bottom: 3.25rem;
+  }
+
+  .luxuria__maharaja-title {
+    font-size: clamp(1.45rem, 6.5vw, 1.9rem);
+  }
+
+  .luxuria__maharaja-text {
+    font-size: 0.88rem;
   }
 }
 

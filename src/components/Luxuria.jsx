@@ -49,7 +49,17 @@ export default function Luxuria() {
               {collection.eyebrow ? (
                 <p className="luxuria__eyebrow">{collection.eyebrow}</p>
               ) : null}
-              {collection.title ? <h3>{collection.title}</h3> : null}
+              {collection.title ? (
+                <h3
+                  className={
+                    collection.titleGold
+                      ? 'luxuria__collection-title--gold'
+                      : undefined
+                  }
+                >
+                  {collection.title}
+                </h3>
+              ) : null}
               {collection.tagline ? (
                 <p className="luxuria__collection-tagline">{collection.tagline}</p>
               ) : null}
@@ -75,6 +85,24 @@ export default function Luxuria() {
             </div>
           </article>
         ))}
+      </div>
+
+      <div className="luxuria__maharaja container">
+        <figure className="luxuria__maharaja-media">
+          <img
+            src="/luxuria/royal-legacy.jpg?v=2"
+            alt="Maharaja Collection — Luxuria Signature products"
+            loading="lazy"
+          />
+        </figure>
+        <div className="luxuria__maharaja-copy">
+          <p className="luxuria__maharaja-eyebrow">Maharaja Collection</p>
+          <h3 className="luxuria__maharaja-title">A Royal Legacy in Every Drop</h3>
+          <p className="luxuria__maharaja-text">
+            Crafted for those who appreciate tradition, sophistication, and
+            timeless luxury.
+          </p>
+        </div>
       </div>
     </section>
   )

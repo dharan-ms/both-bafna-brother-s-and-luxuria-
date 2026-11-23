@@ -13,7 +13,6 @@ export const products = [
   {
     id: 3,
     name: 'Shahi Kesariya Syrup',
-    tagline: 'Luxury Syrup',
     desc: 'Enriched with Gold & Silver flakes for a touch of elegance.',
     image: '/product-3.jpg',
   },
