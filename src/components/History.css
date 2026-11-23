@@ -178,25 +178,27 @@
 .history-page__pair {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.85rem;
-  max-width: 420px;
-  margin: 0.35rem auto 0;
+  gap: 0.65rem;
+  max-width: 360px;
+  width: 100%;
+  margin: 0.85rem auto 0;
 }
 
 .history-page__pair-figure {
   margin: 0;
   width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(194, 155, 64, 0.28);
+  background: #12080c;
 }
 
 .history-page__pair-figure img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  object-position: center top;
-  filter: brightness(1.08) contrast(1.04) saturate(1.06);
-  border: 1px solid rgba(194, 155, 64, 0.28);
+  object-position: center center;
 }
 
 .history-page__figure {

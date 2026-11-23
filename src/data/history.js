@@ -8,12 +8,12 @@ export const historySections = [
     accent: 'A precious gift of the Nature',
     images: [
       {
-        src: '/history-founder-legacy.jpg',
-        alt: 'Mr. Jawantraji Bafna with Bafna Brothers saffron',
+        src: '/history-founder-legacy.jpg?v=4',
+        alt: 'Mr. Jawantraji Bafna with Bafna Brothers Grade A saffron',
       },
       {
-        src: '/history-founder-harvest.jpg',
-        alt: 'Hand-harvesting saffron in the flower fields',
+        src: '/history-founder-harvest.jpg?v=1',
+        alt: 'Mr. Jawantraji Bafna harvesting saffron in the flower fields',
       },
     ],
   },

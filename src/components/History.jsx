@@ -179,7 +179,9 @@ function SectionBlock({ section }) {
           ))}
         </div>
       ) : section.image ? (
-        <figure className="history-page__figure">
+        <figure
+          className={`history-page__figure${section.imageCover ? ' history-page__figure--fullcover' : ''}`}
+        >
           <img
             src={section.image}
             alt={section.imageAlt || ''}
