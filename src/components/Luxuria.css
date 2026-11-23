@@ -63,9 +63,11 @@
 }
 
 .luxuria__gifts {
-  font-size: 0.88rem;
+  font-family: var(--serif);
+  font-size: 1.05rem;
   font-weight: 500;
-  color: #3a1a20;
+  letter-spacing: 0.02em;
+  color: var(--gold-light);
   margin-bottom: 0.45rem;
 }
 
@@ -121,7 +123,7 @@
 .luxuria__highlight h4 {
   font-family: var(--serif);
   font-size: 1.15rem;
-  color: var(--cream);
+  color: var(--gold-light);
   margin-bottom: 0.35rem;
 }
 

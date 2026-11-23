@@ -8,6 +8,7 @@ import Bestsellers from './components/Bestsellers'
 import TrustedBrands from './components/TrustedBrands'
 import Luxuria from './components/Luxuria'
 import Founder from './components/Founder'
+import Contact from './components/Contact'
 import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 
@@ -46,6 +47,7 @@ export default function App() {
         <TrustedBrands />
         <Luxuria />
         <Founder />
+        <Contact />
         <Newsletter />
       </main>
       <Footer

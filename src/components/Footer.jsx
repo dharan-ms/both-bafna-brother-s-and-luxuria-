@@ -31,7 +31,7 @@ const PRODUCT_LINKS = [
 
 export default function Footer({ onOpenHistory, onOpenVideos }) {
   return (
-    <footer className="footer" id="contact">
+    <footer className="footer">
       <div className="footer__inner container">
         <div className="footer__brand">
           <a href="#home" className="footer__logos" aria-label="Bafna Brothers home">
