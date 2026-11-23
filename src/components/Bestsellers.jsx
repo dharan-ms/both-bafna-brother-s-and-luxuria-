@@ -23,15 +23,17 @@ export default function Bestsellers() {
                   loading="lazy"
                 />
               </div>
-              {product.tagline ? (
-                <p className="bestsellers__tagline">{product.tagline}</p>
-              ) : null}
-              {product.name ? (
-                <h3 className="bestsellers__name">{product.name}</h3>
-              ) : null}
-              {product.desc ? (
-                <p className="bestsellers__desc">{product.desc}</p>
-              ) : null}
+              <div className="bestsellers__copy">
+                {product.tagline ? (
+                  <p className="bestsellers__tagline">{product.tagline}</p>
+                ) : null}
+                {product.name ? (
+                  <h3 className="bestsellers__name">{product.name}</h3>
+                ) : null}
+                {product.desc ? (
+                  <p className="bestsellers__desc">{product.desc}</p>
+                ) : null}
+              </div>
             </article>
           ))}
         </div>

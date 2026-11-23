@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import BrandLogos from './BrandLogos'
+import BgMusic from './BgMusic'
 import './Navbar.css'
 
 const NAV_LINKS = [
@@ -119,6 +120,7 @@ export default function Navbar({ onOpenHistory, onOpenVideos }) {
         </nav>
 
         <div className="navbar__actions">
+          <BgMusic />
           <button
             type="button"
             className="navbar__toggle"
