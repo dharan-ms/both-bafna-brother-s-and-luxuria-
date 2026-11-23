@@ -1,4 +1,3 @@
-import SocialLinks from './SocialLinks'
 import './Founder.css'
 
 export default function Founder() {
@@ -8,7 +7,7 @@ export default function Founder() {
         <div className="founder__portrait">
           <img
             className="founder__photo"
-            src="/founder.jpg?v=9"
+            src="/founder.jpg?v=10"
             alt="Mr. Jawantraji Bafna, Founder of Bafna Brothers Kesarwala"
           />
         </div>
@@ -35,7 +34,6 @@ export default function Founder() {
               {' / '}
               <a href="tel:+9161837037">61837037</a>
             </p>
-            <SocialLinks className="founder__social" />
             <a
               className="founder__web"
               href="https://www.bafnabrotherskesarwala.com"

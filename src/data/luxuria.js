@@ -9,7 +9,8 @@ export const luxuriaCollections = [
   },
   {
     id: 'syrups',
-    title: 'Luxury Syrups',
+    title: '',
+    imageAlt: 'Luxury syrups collection',
     lead: 'Infused with quality gold / silver flakes & saffron strands — refined taste for gourmet dishes and premium beverages.',
     items: [
       'Shahi Kesariya Syrup',

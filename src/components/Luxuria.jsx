@@ -39,13 +39,17 @@ export default function Luxuria() {
         {luxuriaCollections.map((collection) => (
           <article key={collection.id} className="luxuria__collection">
             <div className="luxuria__collection-media">
-              <img src={collection.image} alt={collection.title} loading="lazy" />
+              <img
+                src={collection.image}
+                alt={collection.imageAlt || collection.title || ''}
+                loading="lazy"
+              />
             </div>
             <div className="luxuria__collection-copy">
               {collection.eyebrow ? (
                 <p className="luxuria__eyebrow">{collection.eyebrow}</p>
               ) : null}
-              <h3>{collection.title}</h3>
+              {collection.title ? <h3>{collection.title}</h3> : null}
               {collection.tagline ? (
                 <p className="luxuria__collection-tagline">{collection.tagline}</p>
               ) : null}

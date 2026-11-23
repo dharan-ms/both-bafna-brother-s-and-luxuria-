@@ -24,7 +24,7 @@
   display: block;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -78,10 +78,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-}
-
-.founder__social .social-links__label {
-  color: rgba(249, 245, 242, 0.55);
 }
 
 .founder__care {
