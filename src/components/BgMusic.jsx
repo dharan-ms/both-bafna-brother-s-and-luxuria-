@@ -3,7 +3,7 @@ import { Music, VolumeX } from 'lucide-react'
 import './BgMusic.css'
 
 const MUSIC_SRC = '/audio/bg-music-web.mp3?v=2'
-const MUSIC_VOLUME = 0.1
+const MUSIC_VOLUME = 0.035
 
 let sharedAudio = null
 

@@ -96,6 +96,29 @@
   object-position: center;
 }
 
+.about__video-caption {
+  margin-top: 0.9rem;
+  text-align: center;
+}
+
+.about__video-name {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  font-weight: 600;
+  color: var(--burgundy);
+  line-height: 1.25;
+}
+
+.about__video-role {
+  margin: 0.2rem 0 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-muted);
+}
+
 @media (max-width: 960px) {
   .about__inner {
     grid-template-columns: 1fr;

@@ -49,6 +49,10 @@ export default function About() {
               ariaLabel="About Bafna Brothers Kesarwala"
             />
           </div>
+          <div className="about__video-caption">
+            <p className="about__video-name">Mr. Jawantraji Bafna</p>
+            <p className="about__video-role">Founder</p>
+          </div>
         </div>
       </div>
     </section>

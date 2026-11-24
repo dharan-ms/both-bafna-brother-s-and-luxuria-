@@ -36,6 +36,15 @@ export default function Footer({ onOpenHistory, onOpenVideos }) {
         <div className="footer__brand">
           <a href="#home" className="footer__logos" aria-label="Bafna Brothers home">
             <BrandLogos />
+            <span className="footer__logo-divider" aria-hidden="true" />
+            <img
+              className="footer__logo-nx"
+              src="/brand-logo-nx.png?v=1"
+              alt="Bafna NX Kesarwala"
+              width={607}
+              height={409}
+              decoding="async"
+            />
           </a>
           <div className="footer__brand-copy">
             <p className="footer__tagline-title">India&apos;s Legacy Saffron House</p>

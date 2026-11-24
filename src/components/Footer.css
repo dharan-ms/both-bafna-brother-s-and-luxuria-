@@ -23,11 +23,36 @@
 
 .footer__logos {
   margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .footer__logos .brand-logos__img {
   height: 96px;
-  max-width: min(480px, 100%);
+  max-width: min(420px, 52vw);
+}
+
+.footer__logo-divider {
+  flex: 0 0 1px;
+  align-self: stretch;
+  width: 1px;
+  min-height: 2.75rem;
+  margin-block: 0.85rem;
+  background: rgba(212, 175, 90, 0.55);
+}
+
+.footer__logo-nx {
+  display: block;
+  height: 78px;
+  width: auto;
+  max-width: min(160px, 28vw);
+  object-fit: contain;
+  object-position: left center;
+  background: transparent;
+  filter: brightness(1.05) contrast(1.04) saturate(1.08);
 }
 
 .footer__brand-copy {
@@ -231,11 +256,22 @@
 
   .footer__logos {
     max-width: 100%;
+    gap: 0.55rem;
+    flex-wrap: wrap;
   }
 
   .footer__logos .brand-logos__img {
     height: 72px;
-    max-width: min(100%, 320px);
+    max-width: min(100%, 280px);
+  }
+
+  .footer__logo-nx {
+    height: 56px;
+    max-width: min(120px, 34vw);
+  }
+
+  .footer__logo-divider {
+    margin-block: 0.55rem;
   }
 
   .footer__products {
