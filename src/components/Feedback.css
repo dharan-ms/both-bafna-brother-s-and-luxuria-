@@ -6,7 +6,7 @@
 }
 
 .feedback__inner {
-  width: min(1080px, 92%);
+  width: min(1120px, 92%);
 }
 
 .feedback__header {
@@ -43,11 +43,12 @@
 
 .feedback__grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 1.15rem;
 }
 
 .feedback__card {
+  grid-column: span 2;
   background: #ffffff;
   border-radius: 14px;
   padding: 1.35rem 1.3rem 1.4rem;
@@ -59,6 +60,15 @@
   flex-direction: column;
   gap: 0.85rem;
   min-height: 100%;
+  box-sizing: border-box;
+}
+
+.feedback__card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.feedback__card:nth-child(5) {
+  grid-column: 4 / span 2;
 }
 
 .feedback__card-stars {
@@ -89,6 +99,12 @@
     max-width: 460px;
     margin-inline: auto;
     gap: 1rem;
+  }
+
+  .feedback__card,
+  .feedback__card:nth-child(4),
+  .feedback__card:nth-child(5) {
+    grid-column: auto;
   }
 
   .feedback {

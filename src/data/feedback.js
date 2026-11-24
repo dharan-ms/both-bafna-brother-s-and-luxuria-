@@ -2,19 +2,31 @@ export const feedbackItems = [
   {
     id: 1,
     quote:
-      'The colour and aroma are unreal. A few threads in warm milk and it blooms into deep gold — exactly how my grandmother’s kitchen smelled.',
+      'Exceptional quality and excellent service! Their saffron has a wonderful aroma, rich colour, and authentic taste. Highly recommended for anyone looking for premium-quality kesar.',
     author: 'A Bafna Brothers customer',
   },
   {
     id: 2,
     quote:
-      'You can tell it’s the real, pure stuff. We’ve used Bafna Brothers saffron for festivals and sweets for years and it never disappoints.',
+      'A perfect destination for premium saffron. Excellent product quality, beautiful packaging, and great customer service. Truly impressive!',
     author: 'A Bafna Brothers customer',
   },
   {
     id: 3,
     quote:
-      'Beautiful packaging and genuinely premium saffron. The gift pack is my go-to for weddings and Diwali every single year.',
+      'One of the finest places to purchase quality kesar. Their commitment to purity and quality is truly appreciable. Definitely worth recommending!',
+    author: 'A Bafna Brothers customer',
+  },
+  {
+    id: 4,
+    quote:
+      'Premium quality, authentic fragrance, and outstanding service. Bafna Brothers Kesarwala truly stands out for its quality and professionalism.',
+    author: 'A Bafna Brothers customer',
+  },
+  {
+    id: 5,
+    quote:
+      'Absolutely impressed with the quality of their saffron. Rich aroma, excellent colour, and a wonderful overall experience. A brand worth trusting!',
     author: 'A Bafna Brothers customer',
   },
 ]
