@@ -68,10 +68,20 @@
   letter-spacing: 0.04em;
   text-transform: none;
   color: var(--gold-light);
-  margin-bottom: 1.35rem;
+  margin-bottom: 0.85rem;
   padding: 0.95rem 0;
   border-top: 1px solid rgba(194, 155, 64, 0.2);
   border-bottom: 1px solid rgba(194, 155, 64, 0.2);
+}
+
+.founder__locations {
+  font-family: var(--serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin: 0 0 1.35rem;
 }
 
 .founder__meta {

@@ -27,6 +27,8 @@ export default function Founder() {
             Festive Gifts | Wedding Gifts | Corporate Gifts
           </p>
 
+          <p className="founder__locations">INDIA | DUBAI</p>
+
           <div className="founder__meta">
             <p className="founder__care">
               Customer Care No.{' '}
