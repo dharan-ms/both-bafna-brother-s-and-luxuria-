@@ -23,11 +23,12 @@ export default function Founder() {
             every step of our operations.
           </p>
 
-          <p className="founder__gifts">
-            Festive Gifts | Wedding Gifts | Corporate Gifts
-          </p>
-
-          <p className="founder__locations">INDIA | DUBAI</p>
+          <div className="founder__highlight">
+            <p className="founder__locations">INDIA | DUBAI</p>
+            <p className="founder__gifts">
+              Festive Gifts | Wedding Gifts | Corporate Gifts
+            </p>
+          </div>
 
           <div className="founder__meta">
             <p className="founder__care">
