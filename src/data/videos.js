@@ -11,7 +11,7 @@ export const videoStories = [
     title: 'Premium Saffron',
     eyebrow: 'Grade a saffron',
     text: 'Trusted by generations of families. From handpicked strands to meticulous processing — experience the richness, aroma, and unmatched quality of our finest saffron.',
-    src: '/videos/saffron.mp4',
+    src: '/videos/premium-saffron.mp4',
   },
   {
     id: 'perfume',
@@ -75,5 +75,28 @@ export const videoStories = [
     eyebrow: '',
     text: 'Infused with mamri almonds, saffron and kishori pistachios provides a luxurious and wholesome addition to your diet. This blend of high-quality dry fruits Enjoy the richness and natural goodness of these fine ingredients in every sip or dish',
     src: '/videos/saffron-milk-masala.mp4',
+  },
+  {
+    id: 'kashmiri-kahwa-tea',
+    title: 'KASHMIRI KAHWA TEA',
+    eyebrow: 'Instant Mix',
+    text: 'Made with 100% Pure Saffron & Indian Spices',
+    src: '/videos/kashmiri-kahwa-tea.mp4',
+  },
+  {
+    id: 'rose-water',
+    title: 'Natural Distilled Pure Rose Water',
+    eyebrow: '',
+    text: 'Crafted from Organically Grown Roses. Pure Steam Distillation — Pure & Edible.',
+    pointsLabel: 'Multiple Use',
+    points: [
+      'Skin Toner',
+      'Body Cooler',
+      'Nutritive Drink',
+      'Eye Toner',
+      'Mood Refresher',
+      'Food & Beverages Flavor',
+    ],
+    src: '/videos/rose-water.mp4',
   },
 ]

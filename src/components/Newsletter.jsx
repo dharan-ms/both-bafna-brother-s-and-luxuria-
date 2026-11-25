@@ -26,8 +26,8 @@ export default function Newsletter() {
         </div>
 
         <div className="newsletter__content">
-          <p className="newsletter__eyebrow">Stay Connected</p>
-          <h2 className="newsletter__title">A ritual for every hour.</h2>
+          <p className="newsletter__eyebrow">Premium Kesar powder</p>
+          <h2 className="newsletter__title">High-Impact Morning Rituals</h2>
           <p className="newsletter__desc">
             From morning glass to festive table the way a pinch of kesar quietly
             runs through an Indian day.

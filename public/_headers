@@ -5,3 +5,6 @@
   Content-Type: video/mp4
   Accept-Ranges: bytes
   Cache-Control: public, max-age=31536000, immutable
+
+/videos/posters/*
+  Cache-Control: public, max-age=31536000, immutable

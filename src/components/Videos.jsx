@@ -77,6 +77,18 @@ export default function Videos({ open, onClose }) {
                 {story.text ? (
                   <p className="video-row__text">{story.text}</p>
                 ) : null}
+                {story.points?.length ? (
+                  <div className="video-row__points">
+                    {story.pointsLabel ? (
+                      <p className="video-row__points-label">{story.pointsLabel}</p>
+                    ) : null}
+                    <ul>
+                      {story.points.map((point) => (
+                        <li key={point}>{point}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
               </div>
             </article>
           ))}
