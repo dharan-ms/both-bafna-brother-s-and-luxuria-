@@ -32,15 +32,41 @@
   align-items: center;
   flex: 0 1 auto;
   min-width: 0;
-  max-width: min(440px, 44%);
+  max-width: min(520px, 48%);
 }
 
-.navbar__brand .brand-logos__img {
-  height: 84px;
-  max-width: 100%;
-  width: auto;
-  object-fit: contain;
-  object-position: left center;
+.navbar__brand .brand-logos__bbk {
+  height: 58px;
+  max-width: min(240px, 28%);
+}
+
+.navbar__brand .brand-logos__lux {
+  height: 86px;
+  max-width: min(165px, 20%);
+}
+
+@media (min-width: 1101px) and (max-width: 1440px) {
+  .navbar__brand {
+    max-width: min(500px, 48%);
+  }
+
+  .navbar__brand .brand-logos__bbk {
+    height: 50px;
+  }
+
+  .navbar__brand .brand-logos__lux {
+    height: 76px;
+  }
+}
+
+@media (min-width: 900px) and (max-height: 820px) {
+  .navbar__brand .brand-logos__bbk {
+    height: 46px;
+  }
+
+  .navbar__brand .brand-logos__lux {
+    height: 70px;
+  }
 }
 
 .navbar__links {
@@ -143,17 +169,19 @@
   }
 
   .navbar .navbar__brand .brand-logos {
-    display: block;
-    width: 100%;
+    display: inline-flex;
+    width: auto;
+    max-width: 100%;
   }
 
-  .navbar .navbar__brand .brand-logos__img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 96px;
-    object-fit: contain;
-    object-position: left center;
+  .navbar .navbar__brand .brand-logos__bbk {
+    height: 50px;
+    max-width: min(200px, 46vw);
+  }
+
+  .navbar .navbar__brand .brand-logos__lux {
+    height: 74px;
+    max-width: min(140px, 30vw);
   }
 
   .navbar__drawer {
@@ -217,11 +245,14 @@
     gap: 0.55rem;
   }
 
-  .navbar .navbar__brand .brand-logos__img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 78px;
+  .navbar .navbar__brand .brand-logos__bbk {
+    height: 40px;
+    max-width: min(150px, 40vw);
+  }
+
+  .navbar .navbar__brand .brand-logos__lux {
+    height: 60px;
+    max-width: min(115px, 28vw);
   }
 
   .navbar__actions .navbar__toggle {

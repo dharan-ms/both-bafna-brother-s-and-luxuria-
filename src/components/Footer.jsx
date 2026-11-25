@@ -39,7 +39,7 @@ export default function Footer({ onOpenHistory, onOpenVideos }) {
             <span className="footer__logo-divider" aria-hidden="true" />
             <img
               className="footer__logo-nx"
-              src="/brand-logo-nx.png?v=1"
+              src="/brand-logo-nx.png?v=2"
               alt="Bafna NX Kesarwala"
               width={607}
               height={409}

@@ -30,9 +30,14 @@
   max-width: 100%;
 }
 
-.footer__logos .brand-logos__img {
-  height: 96px;
-  max-width: min(420px, 52vw);
+.footer__logos .brand-logos__bbk {
+  height: 60px;
+  max-width: min(220px, 26vw);
+}
+
+.footer__logos .brand-logos__lux {
+  height: 88px;
+  max-width: min(165px, 20vw);
 }
 
 .footer__logo-divider {
@@ -52,7 +57,8 @@
   object-fit: contain;
   object-position: left center;
   background: transparent;
-  filter: brightness(1.05) contrast(1.04) saturate(1.08);
+  /* Match brand-logos__img treatment exactly */
+  filter: brightness(1.02) contrast(1.04) saturate(1.05);
 }
 
 .footer__brand-copy {
@@ -260,9 +266,14 @@
     flex-wrap: wrap;
   }
 
-  .footer__logos .brand-logos__img {
-    height: 72px;
-    max-width: min(100%, 280px);
+  .footer__logos .brand-logos__bbk {
+    height: 58px;
+    max-width: min(200px, 42vw);
+  }
+
+  .footer__logos .brand-logos__lux {
+    height: 70px;
+    max-width: min(120px, 26vw);
   }
 
   .footer__logo-nx {
